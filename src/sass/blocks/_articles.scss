@@ -1,0 +1,103 @@
+.articles {
+    padding-top: 117px;
+    .title {
+        text-align: center;
+    }
+    &__wrapper {
+        position: relative;
+        width: 949px;
+        height: 397px;
+        border: 2px solid #f4b407;
+        margin: auto;
+        margin-top: 56px;
+        pointer-events: none;
+        &:hover {
+            background: #085086;
+            .articles__text p {
+                font-weight: 300;
+            }
+        }
+    }
+    &__subtitle {
+        margin-top: 40px;
+        color: #0a6ab2;
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__text {
+        margin-top: 25px;
+        margin-left: 57px;
+        p {
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            text-align: left;
+            max-width: 711px;
+            transition: 0.3s all;
+        }
+    }
+    &__btn {
+        width: 169px;
+        height: 40px;
+        background-color: #085086;
+        border: none;
+        margin: 35px 24px 21px 756px;
+        cursor: pointer;
+        &:hover, &:focus {
+            .articles__wrapper, .articles__wrapper-last {
+                background: #0c2c56;
+            }
+        }
+        a {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 400;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            pointer-events: auto;
+            
+        }
+    }
+    &__wrapper-last {
+        position: relative;
+        width: 949px;
+        height: 265px;
+        border: 2px solid #f4b407;
+        margin: auto;
+        margin-top: 35px;
+        pointer-events: none;
+        &:hover {
+            background: #085086;
+            .articles__text p {
+                font-weight: 300;
+
+            }
+        }
+    }
+    &__link {
+        display: flex;
+        margin-left: 1013px;
+        margin-right: 32px;
+        margin-top: 28px;
+        a {
+            color: #085086;
+            font-size: 18px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+    }
+    &__wrapper-top {
+        position: absolute;
+        top: 378px;
+        left: 65px;
+    }
+    &__wrapper-low {
+        position: absolute;
+        left: 65px;
+        top: 246px;
+    }
+}

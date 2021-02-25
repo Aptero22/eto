@@ -1,0 +1,46 @@
+.installations {
+    padding-top: 157px;
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    &__wrapper-info {
+        position: relative;
+        background-color: #0c2c56;
+        min-width: 793px;
+    }
+    &__wrapper-img {
+        position: absolute;
+        top: -19px;
+        left: 15px;
+    }
+    &__wrapper-block {
+        margin: 40px 0 0 80px;
+        p {
+            margin-top: 26px;
+            width: 533px;
+            color: #b4deff;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            text-align: left;
+        }
+    }
+    &__wrapper-btn {
+        width: 143px;
+        height: 40px;
+        background-color: #085086;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        margin-left: 440px;
+    }
+    a {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+}
+        
