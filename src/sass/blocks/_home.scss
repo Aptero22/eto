@@ -17,12 +17,12 @@
     }
     &__abs-right {
         position: absolute;
-        top: 166px;
+        top: 134px;
         right: 40px;
     }
     &__line-left {
         position: absolute;
-        top: 135px;
+        top: 104px;
         left: 265px;
     }
     &__submenu {
@@ -31,6 +31,9 @@
         list-style-type: none;
         li {
             margin-right: 82px;
+            &:last-child {
+                margin-right: 0;
+            }
             a {
                 color: #acdbff;
                 font-size: 11px;

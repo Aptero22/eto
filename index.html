@@ -15,7 +15,7 @@
             <img src="./src/icons/ecva_2.png" alt="ecva_2">
         </div>
         <div class="container">
-            <header class="header">
+            <header>
                 <div class="header__top">
                     
                     <div class="header__logo">
@@ -84,6 +84,9 @@
     <!-- <section class="about">
         <div class="container">
             <div class="about__wrapper">
+                <div class="about__img">
+                    <img src="./src/icons/ecva_1.png" alt="ecva_1">
+                </div>
                 <h2 class="title">О НАС</h2>
                 <div class="about__wrapper-img">
                     <img src="./src/img/line.png" alt="line" class="line">
@@ -102,9 +105,9 @@
                 <a class="about__btn" href="#">ПОДРОБНЕЕ</a>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="products">
+    <section class="products">
         <div class="container">
             <div class="products__wrapper">
                 <h2 class="title">продукция</h2>
@@ -159,9 +162,9 @@
                 <a class="products__btn" href="#">посмотреть прайс</a>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="services">
+    <section class="services">
         <div class="container">
             <div class="services__wrapper">  
                 <h2 class="title">услуги</h2>
@@ -304,9 +307,9 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="articles">
+    <section class="articles">
         <div class="container">
             <h2 class="title">статьи</h2>
             <div class="articles__wrapper">
@@ -355,9 +358,9 @@
                 <a href="#">все статьи</a>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="reviews">
+    <section class="reviews">
         <div class="container">
             <h2 class="title">отзывы наших клиентов</h2>
             <div class="reviews__wrapper">
@@ -377,17 +380,17 @@
                             <a href="#">все отзывы</a>
                         </div>
                         <div class="reviews__wrapper-btn">
-                            <button class="reviews__btn">
-                                <a href="#">оставить отзыв</a>
+                            <button data-modal="new_review" class="reviews__btn">
+                                оставить отзыв
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     
-    <!-- <section class="contacts">
+    <section class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__wrapper-left">
@@ -457,9 +460,9 @@
             </div>
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.296831925466!2d83.79952281597632!3d53.33794248304155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dda5b7df997289%3A0x607aa4dbdcac0633!2z0YPQuy4g0JPQvtCz0L7Qu9GPLCA2LCDQkdCw0YDQvdCw0YPQuywg0JDQu9GC0LDQudGB0LrQuNC5INC60YDQsNC5LCA2NTYwNTY!5e0!3m2!1sru!2sru!4v1614008715613!5m2!1sru!2sru" width="100%" height="532" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section> -->
+    </section>
 
-    <!-- <footer>
+    <footer class="footer">
         <div class="container">
             <div class="footer__wrapper-logo">
                 <img src="./src/icons/footer_logo_1.png" alt="eto">
@@ -503,7 +506,40 @@
         <div class="footer__wrapper-right">
             <img src="./src/icons/ecva_footer.png" alt="ecva_footer">
         </div>
-    </footer> -->
-    
+    </footer>
+
+    <div class="overlay">
+        <div class="modal" id="new_review">
+            <div class="modal__top">
+                <div class="modal__top-subtitle">оставить свой отзыв</div>
+                <div class="modal__top-close">&times;</div>
+            </div>
+            <form>
+                <div class="modal__input">
+                    <label for="name">Ваше имя<span>*</span></label>
+                    <input required name="name" id ="name" type="text">
+                </div>
+                <div class="modal__textarea">
+                    <label for="text">Сообщение<span>*</span></label>
+                    <textarea name="text" id="text"></textarea>    
+                </div>
+                <div class="modal__captcha">
+                    <div class="modal__captcha-img">
+                        <img src="./src/img/capt.png" alt="capt">
+                    </div>
+                    <div class="modal__captcha-input">
+                        <label for="name">Введите код с картинки<span>*</span></label>
+                        <input required name="name" id ="name" type="text">
+                    </div>
+                </div>
+                <div class="modal__button">
+                    <button class="modal__btn">оставить отзыв</button>
+                </div>
+                
+            </form>
+        </div>
+    </div> -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="/src/js/script.js"></script>
 </body>
 </html>

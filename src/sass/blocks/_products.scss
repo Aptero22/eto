@@ -50,6 +50,9 @@
         align-items: center;
         justify-content: center;
         text-transform: uppercase;
+        &:hover {
+            background-color: #085086;
+        }
     }
     a {
         color: #ffffff;

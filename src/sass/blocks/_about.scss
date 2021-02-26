@@ -4,6 +4,11 @@
         margin-left: 165px;
         position: relative;
     }
+    &__img {
+        position: absolute;
+        top: -90px;
+        right: 197px;
+    }
     &__wrapper-img {
         position: absolute;
         top: 31px;
@@ -30,6 +35,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        &:hover {
+            background-color: #085086;
+        }
     }
     a {
         color: #ffffff;
