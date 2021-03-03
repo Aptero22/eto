@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/src/css/slick.css">
     <link rel="stylesheet" href="./src/css/style.min.css">
 </head>
 <body>
@@ -13,6 +14,15 @@
         </div>
         <div class="header__abs-right">
             <img src="./src/icons/ecva_2.png" alt="ecva_2">
+        </div>
+        <div class="header__abs-right-low">
+            <img src="./src/icons/ecva_color.png" alt="color">
+        </div>
+        <div class="header__line-left">
+            <img src="./src/img/line_green.png" alt="green">
+        </div>
+        <div class="header__line-left_blue">
+            <img src="./src/img/line_blue.png" alt="green">
         </div>
         <div class="container">
             <header>
@@ -49,8 +59,7 @@
             </header>
         </div>
     </section>
-
-    <section class="home">
+    <section class="carousel">
         <ul class="home__wrapper">
             <div class="home__submenu">
                 <li class="home__submenu_item">
@@ -63,24 +72,78 @@
                     <a href="#" class="home__submenu_link">Студия звукозаписи</a>
                 </li>
             </div>
-            <div class="home__abs-right">
-                <img src="./src/icons/ecva_color.png" alt="color">
-            </div>
-            <div class="home__line-left">
-                <img src="./src/img/line_green.png" alt="green">
-            </div>
         </ul>
-        <div class="container">
-            <div class="home__text">
-                НАДЕЖНОСТЬ,<br>
-                <span>ПОМНОЖЕННАЯ НА</span> 
+            <div class="carousel__inner">
+                <div>
+                    <div class="carousel__slide-two">
+                        <div class="container">
+                            <div class="carousel__two">
+                                <div class="carousel__two_box">
+                                    <div class="carousel__two_top">
+                                        <div class="carousel__two_logo">
+                                            <img src="./src/icons/slide_logo1.png" alt="logo1">
+                                        </div>
+                                        <div class="carousel__two__desrc">
+                                            Экспериментальное 
+                                            Творческое Объединение
+                                        </div>
+                                    </div>
+                                    <div class="carousel__two_middle">
+                                        <div class="carousel__two_logo">
+                                            <img src="./src/icons/slide_logo2.png" alt="logo2">
+                                        </div>
+                                        <div class="carousel__two__desrc">
+                                            Design Electronic 
+                                            Laboratory
+                                        </div>
+                                    </div>
+                                    <div class="carousel__two_low">
+                                        <div class="carousel__two_logo">
+                                            <img src="./src/icons/slide_logo3.png" alt="logo3">
+                                        </div>
+                                        <div class="carousel__two__desrc">
+                                            Лаборатория 
+                                            Акустического Дизайна                 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div>
+                    <div class="carousel__slide-one">
+                        <div class="container">
+                            <div class="carousel__one">
+                                <div class="home__text">
+                                    НАДЕЖНОСТЬ,<br>
+                                    <span>ПОМНОЖЕННАЯ НА</span> 
+                                </div>
+                                <div class="home__quality">
+                                    качество
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
             </div>
-            <div class="home__quality">
-                качество
+            <div class="carousel__slider-ctrl">
+                <button type="button" class="slick-prev">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
+                    <path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+                        c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"/>
+                    </svg>          
+                </button>
+                <button type="button" class="slick-next">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
+                    <path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
+                        c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"/>
+                    </svg>          
+                </button>
             </div>
-        </div>
     </section>
-
     <section class="about">
         <div class="container">
             <div class="about__wrapper">
@@ -106,7 +169,6 @@
             </div>
         </div>
     </section>
-
     <section class="products">
         <div class="container">
             <div class="products__wrapper">
@@ -114,13 +176,15 @@
                 <div class="products__wrapper-img">
                     <img src="./src/img/line.png" alt="line" class="line">
                 </div>
-                <div class="products__descr">
-                    <p>
-                        <span>DEL</span> – производственное подразделение <span>ООО ЭТО.</span> Совместно с <span>ООО ЛАД</span> занимается разработкой и изготовлением звукоусилительной аппаратуры профессионального класса.
-                    </p>
+                <div class="products__wrapper-text">
+                    <div class="products__descr">
+                        <p>
+                            <span>DEL</span> – производственное подразделение <span>ООО ЭТО.</span> Совместно с <span>ООО ЛАД</span> занимается разработкой и изготовлением звукоусилительной аппаратуры профессионального класса.
+                        </p>
+                    </div>
                 </div>
                 <div class="products__wrapper-item">
-                    <div class="products__item">
+                    <a href="#" class="products__item">
                         <div class="products__item-img">
                             <img src="./src/img/item_1.png" alt="1">
                             <div class="products__item-text">
@@ -134,8 +198,8 @@
                             АКУСТИКА DEL
                         </div>
                         
-                    </div>
-                    <div class="products__item">
+                    </a>
+                    <a href="#" class="products__item">
                         <div class="products__item-img">
                             <img src="./src/img/item_2.png" alt="2">
                             <div class="products__item-text">
@@ -148,8 +212,8 @@
                             Акустика<br> 
                             HI-FI-PRO DEL
                         </div>
-                    </div>
-                    <div class="products__item">
+                    </a>
+                    <a href="#" class="products__item">
                         <div class="products__item-img">
                             <img src="./src/img/item_3.png" alt="3">
                             <div class="products__item-text">
@@ -163,8 +227,8 @@
                             система<br>  
                             сигнализации<br> 
                         </div>
-                    </div>
-                    <div class="products__item">
+                    </a>
+                    <a href="#" class="products__item">
                         <div class="products__item-img">
                             <img src="./src/img/item_4.png" alt="5">
                             <div class="products__item-text">
@@ -176,7 +240,7 @@
                         <div class="products__item-descr">
                             Автосвет
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="products__wrapper-btn">
@@ -184,7 +248,6 @@
             </div>
         </div>
     </section>
-
     <section class="services">
         <div class="container">
             <div class="services__wrapper">  
@@ -194,11 +257,11 @@
                 </div>
                 <div class="services__descr">
                     <p>
-                    Помимо <a href="#">собственного производства,</a> мы осуществляем деятельность по другим направлениям:
+                    Помимо <a href="#" class="services__descr-link">собственного производства,</a> мы осуществляем деятельность по другим направлениям:
                     </p>
                 </div>
                 <div class="services__wrapper-item">
-                    <div class="services__item">
+                    <a href="#" class="services__item">
                         <div class="services__wrapper-deep">
                             <div class="services__img">
                                 <img src="./src/img/services_1.png" alt="center">
@@ -209,13 +272,12 @@
                                     СЕРВИСНЫЙ ЦЕНТР
                                 </div>
                             </div>
-                            
                         </div>
                         <div class="services__item-descr">
                             Ремонт и техническое обслуживание звукоусилительной аппаратуры и музыкальных инструментов
                         </div>
-                    </div>
-                    <div class="services__item">
+                    </a>
+                    <a href="#" class="services__item">
                         <div class="services__wrapper-deep">
                             <div class="services__img">
                                 <img src="./src/img/services_2.png" alt="1">
@@ -231,8 +293,8 @@
                         <div class="services__item-descr">
                             Запись «живых» исполнителей, аранжировка, запись, сведение фонограмм, тиражирование музыкальных произведений
                         </div>
-                    </div>
-                    <div class="services__item">
+                    </a>
+                    <a href="#" class="services__item">
                         <div class="services__wrapper-deep">
                             <div class="services__img">
                                 <img src="./src/img/services_3.png" alt="acoustics">
@@ -248,8 +310,8 @@
                         <div class="services__item-descr">
                             Акустический расчёт помещений, акустические измерения, разработка проектов акустического оформления помещений
                         </div>
-                    </div>
-                    <div class="services__item">
+                    </a>
+                    <a href="#" class="services__item">
                         <div class="services__wrapper-deep">
                             <div class="services__img">
                                 <img src="./src/img/services_4.png" alt="base">
@@ -265,8 +327,8 @@
                         <div class="services__item-descr">
                             Предоставление в аренду помещения, укомплектованного всем необходимым оборудованием для музыкальной репетиционной работы
                         </div>
-                    </div>
-                    <div class="services__item">
+                    </a>
+                    <a href="#" class="services__item">
                         <div class="services__wrapper-deep">
                             <div class="services__img">
                                 <img src="./src/img/services_5.png" alt="rent">
@@ -282,8 +344,8 @@
                         <div class="services__item-descr">
                             Предоставление в аренду звукоусилительного и музыкального оборудования и инструментов для проведения различных массовых мероприятий и концертов
                         </div>
-                    </div>
-                    <div class="services__item">
+                    </a>
+                    <a href="#" class="services__item">
                         <div class="services__wrapper-deep">
                             <div class="services__img">
                                 <img src="./src/img/services_6.png" alt="support">
@@ -299,13 +361,12 @@
                         <div class="services__item-descr">
                             Консультативная и посредническая помощь во всех вопросах организации и осуществления творческого процесса, проведения культурно-массовых мероприятий, их технического и творческого обеспечения
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- <section class="installations">
+    <section class="installations">
         <div class="container">
              <div class="installations__wrapper">
                 <img src="./src/img/installations.png" alt="installations">
@@ -328,9 +389,8 @@
                 </div>
             </div>
         </div>
-    </section> -->
-
-    <!-- <section class="articles">
+    </section>
+    <section class="articles">
         <div class="container">
             <h2 class="title">статьи</h2>
             <div class="articles__wrapper">
@@ -379,9 +439,8 @@
                 <a href="#">все статьи</a>
             </div>
         </div>
-    </section> -->
-
-    <!-- <section class="reviews">
+    </section>
+    <section class="reviews">
         <div class="container">
             <h2 class="title">отзывы наших клиентов</h2>
             <div class="reviews__wrapper">
@@ -409,9 +468,8 @@
                 </div>
             </div>
         </div>
-    </section> -->
-    
-    <!-- <section class="contacts">
+    </section>
+    <section class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__wrapper-left">
@@ -481,9 +539,9 @@
             </div>
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.296831925466!2d83.79952281597632!3d53.33794248304155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dda5b7df997289%3A0x607aa4dbdcac0633!2z0YPQuy4g0JPQvtCz0L7Qu9GPLCA2LCDQkdCw0YDQvdCw0YPQuywg0JDQu9GC0LDQudGB0LrQuNC5INC60YDQsNC5LCA2NTYwNTY!5e0!3m2!1sru!2sru!4v1614008715613!5m2!1sru!2sru" width="100%" height="532" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section> -->
+    </section>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer__wrapper-logo">
                 <img src="./src/icons/footer_logo_1.png" alt="eto">
@@ -527,7 +585,7 @@
         <div class="footer__wrapper-right">
             <img src="./src/icons/ecva_footer.png" alt="ecva_footer">
         </div>
-    </footer> -->
+    </footer>
 
     <div class="overlay">
         <div class="modal" id="new_review">
@@ -537,11 +595,11 @@
             </div>
             <form>
                 <div class="modal__input">
-                    <label for="name">Ваше имя<span>*</span></label>
+                    <label for="name">Ваше имя<span><sup>*</sup></span></label>
                     <input required name="name" id ="name" type="text">
                 </div>
                 <div class="modal__textarea">
-                    <label for="text">Сообщение<span>*</span></label>
+                    <label for="text">Сообщение<span><sup>*</sup></span></label>
                     <textarea name="text" id="text"></textarea>    
                 </div>
                 <div class="modal__captcha">
@@ -549,7 +607,7 @@
                         <img src="./src/img/capt.png" alt="capt">
                     </div>
                     <div class="modal__captcha-input">
-                        <label for="name">Введите код с картинки<span>*</span></label>
+                        <label for="name">Введите код с картинки<span class="label__stars"><sup>*</sup></span></label>
                         <input required name="name" id ="name" type="text">
                     </div>
                 </div>
@@ -561,6 +619,7 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="/src/js/script.js"></script>
+    <script src="./src/js/slick.min.js"></script>
+    <script src="./src/js/script.js"></script>
 </body>
 </html>

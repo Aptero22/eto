@@ -12,13 +12,17 @@ label {
     text-align: left;
     span {
         color: #c10808;
+        font-size: 13px;
     }
+}
+.label__stars {
+    font-size: 14px;
 }
 .modal {
     width: 347px;
     min-height: 479px;
     border: 2px solid #fdb508;
-    background: rgba(255,255, 255, 0.85);
+    background: rgba(255,255, 255, 1);
     position: absolute;
     top: 50%;
     left: 50%;

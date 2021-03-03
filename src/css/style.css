@@ -130,16 +130,31 @@ p {
   right: 40px;
 }
 
-.home {
-  min-height: 800px;
-  background: url(../img/home.jpg) center center/cover no-repeat;
+.header__abs-right-low {
+  position: absolute;
+  top: 134px;
+  right: 40px;
+  z-index: 200;
+}
+
+.header__line-left {
+  position: absolute;
+  top: 104px;
+  left: 265px;
+  z-index: 200;
+}
+
+.header__line-left_blue {
+  position: absolute;
+  top: 114px;
+  left: 290px;
+  z-index: 150;
 }
 
 .home__wrapper {
   width: 100%;
   height: 31px;
-  background-color: #085086;
-  opacity: 0.78;
+  background-color: rgba(8, 80, 134, 0.78);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,6 +168,10 @@ p {
   padding: 0;
   list-style-type: none;
   border-top: 1px solid #fdb508;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
 }
 
 .home__abs-right {
@@ -325,6 +344,7 @@ p {
 
 .products__item {
   margin-right: 16px;
+  display: block;
 }
 
 .products__item:last-child {
@@ -449,7 +469,10 @@ p {
 .services__descr a {
   color: #0a6ab2;
   font-weight: 500;
-  text-decoration: underline;
+}
+
+.services__descr a:hover, .services__descr a:focus {
+  text-decoration: none;
 }
 
 .services__wrapper-item {
@@ -466,6 +489,21 @@ p {
   min-height: 320px;
   margin-right: 36px;
   margin-bottom: 40px;
+  text-decoration: none;
+}
+
+.services__item:hover .services__emphty,
+.services__item:hover .services__item-subtitle, .services__item:focus .services__emphty,
+.services__item:focus .services__item-subtitle {
+  opacity: 0.85;
+}
+
+.services__item:hover .services__img:before, .services__item:focus .services__img:before {
+  opacity: 0;
+}
+
+.services__item:hover .services__item-subtitle, .services__item:focus .services__item-subtitle {
+  color: #085086;
 }
 
 .services__item-descr {
@@ -524,6 +562,7 @@ p {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
+  color: #000;
 }
 
 .services__img {
@@ -1140,13 +1179,18 @@ label {
 
 label span {
   color: #c10808;
+  font-size: 13px;
+}
+
+.label__stars {
+  font-size: 14px;
 }
 
 .modal {
   width: 347px;
   min-height: 479px;
   border: 2px solid #fdb508;
-  background: rgba(255, 255, 255, 0.85);
+  background: white;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1279,6 +1323,113 @@ label span {
   display: none;
 }
 
+.carousel {
+  position: relative;
+}
+
+.carousel .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel .slick-prev, .carousel .slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: none;
+  display: block;
+  z-index: 100;
+}
+
+.carousel svg {
+  fill: #5d6e75;
+}
+
+.carousel .slick-prev {
+  left: 145px;
+}
+
+.carousel .slick-next {
+  right: 145px;
+}
+
+.carousel__two {
+  width: 290px;
+  height: 403px;
+  background-color: #0c2c56;
+  padding: 30px 19px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.carousel__two_top, .carousel__two_middle, .carousel__two_low {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.carousel__two__desrc {
+  color: #b4deff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-top: 9px;
+}
+
+.carousel__two_middle {
+  margin-top: 50px;
+}
+
+.carousel__two_low {
+  margin-top: 38px;
+}
+
+.carousel__slide-two {
+  background: url(../img/slide_2.png) center center/cover no-repeat;
+  width: 100%;
+  height: 556px;
+}
+
+.carousel__inner {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel__slide-one {
+  background: url(../img/home.jpg) center 15%/cover no-repeat;
+  width: 100%;
+  height: 556px;
+}
+
 @media (max-width: 1280px) {
   .container {
     max-width: 1280px;
@@ -1362,9 +1513,6 @@ label span {
   .products__wrapper-img {
     margin-left: 65px;
   }
-  .products__descr {
-    margin-left: 65px;
-  }
   .products__wrapper-item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1385,37 +1533,20 @@ label span {
   .products__btn {
     margin-left: 0;
   }
-  .products__wrapper {
-    margin-left: 0;
-  }
-  .products .title {
+  .products__wrapper-text {
     margin-left: 65px;
-  }
-  .products__wrapper-img {
-    margin-left: 65px;
+    padding-right: 20px;
   }
   .products__descr {
+    width: 100%;
+  }
+  .services__wrapper {
     margin-left: 65px;
   }
-  .products__wrapper-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .services__wrapper-item {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .products__wrapper-btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    padding-right: 20px;
-  }
-  .products__btn {
-    margin-left: 0;
   }
 }
 
@@ -1476,11 +1607,9 @@ label span {
     margin-left: 0;
   }
   .products__descr {
-    margin-left: 65px;
     width: 100%;
   }
   .products__wrapper-item {
-    padding-left: 65px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
@@ -1539,6 +1668,13 @@ label span {
   .about__wrapper {
     padding-right: 20px;
   }
+  .products__item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .products__wrapper-text {
+    margin-left: 65px;
+    padding-right: 10px;
+  }
 }
 
 @media (max-width: 661px) {
@@ -1590,6 +1726,21 @@ label span {
   }
   .about__img {
     right: 120px;
+  }
+  .products__descr {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .products .title, .products__wrapper-img, .products__wrapper-text {
+    margin-left: 40px;
+  }
+  .services__wrapper {
+    margin-left: 40px;
+    padding-right: 10px;
+  }
+  .services__descr {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

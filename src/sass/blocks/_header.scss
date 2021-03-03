@@ -69,4 +69,22 @@
         top: 60px;
         right: 40px
     }
+    &__abs-right-low {
+        position: absolute;
+        top: 134px;
+        right: 40px;
+        z-index: 200;
+    }
+    &__line-left {
+        position: absolute;
+        top: 104px;
+        left: 265px;
+        z-index: 200;
+        &_blue {
+            position: absolute;
+            top: 114px;
+            left: 290px;
+            z-index: 150;
+        }
+    }
 }
