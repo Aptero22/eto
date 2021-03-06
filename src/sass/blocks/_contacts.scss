@@ -142,6 +142,7 @@
         top: 41px;
     }
     &__btn {
+        cursor: pointer;
         width: 150px;
         height: 40px;
         background-color: #085086;
@@ -152,5 +153,8 @@
         text-transform: uppercase;
         margin-left: 337px;
         margin-top: 20px;
+        &:hover, &:focus {
+            background-color: #0c2c56;
+        }
     }
 }

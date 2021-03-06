@@ -35,12 +35,17 @@
         justify-content: center;
         text-transform: uppercase;
         margin-left: 440px;
+        &:hover, &:focus {
+            background-color: #011a26;
+        }
+        
     }
     a {
         color: #ffffff;
         font-size: 18px;
         font-weight: 400;
         text-decoration: none;
+        
     }
 }
         

@@ -13,9 +13,6 @@
         pointer-events: none;
         &:hover {
             background: #085086;
-            .articles__text p {
-                font-weight: 300;
-            }
         }
     }
     &__subtitle {
@@ -72,10 +69,6 @@
         pointer-events: none;
         &:hover {
             background: #085086;
-            .articles__text p {
-                font-weight: 300;
-
-            }
         }
     }
     &__link {
@@ -88,6 +81,10 @@
             font-size: 18px;
             font-weight: 400;
             text-transform: uppercase;
+            &:hover, &:focus {
+                text-decoration: none;
+                color: #004e88;
+            }
         }
     }
     &__wrapper-top {
