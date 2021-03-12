@@ -11,6 +11,24 @@
     &__logo {
         margin-left: 54px;
     }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__btn {
+        padding-right: 28px;
+    }
+    &__button {
+        width: 164px;
+        height: 40px;
+        background-color: #0c2c56;
+        border: none;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        cursor: pointer;
+
+    }
     &__phone {
         display: flex;
         flex-direction: column;
@@ -21,6 +39,10 @@
             text-align: left;
             text-transform: uppercase;
             text-decoration: none;
+            margin-bottom: 8px;
+            &:last-child {
+                margin-bottom: 0;
+            }
             span {
                 color: #f4b407;
                 font-weight: 500;

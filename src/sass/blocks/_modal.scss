@@ -4,25 +4,26 @@
     width: 100%;
     height: 100%;
     top: 0;
+    background-color: rgba(0, 0, 0, 0.56);
 }
 label {
-    color: #000000;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 500;
     text-align: left;
     span {
         color: #c10808;
-        font-size: 13px;
+        font-size: 15px;
     }
 }
 .label__stars {
-    font-size: 14px;
+    font-size: 15px;
 }
 .modal {
     width: 347px;
     min-height: 479px;
     border: 2px solid #fdb508;
-    background: rgba(255,255, 255, 1);
+    background: #0c2c56;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -34,7 +35,7 @@ label {
         justify-content: space-between;
     }
     &__top-subtitle {
-        color: #011a26;
+        color: #f4b407;
         font-size: 16px;
         font-weight: 500;
         text-transform: uppercase;
@@ -43,7 +44,7 @@ label {
         width: 22px;
         height: 22px;
         font-size: 50px;
-        color: #9e9e9e;
+        color: #011a26;
         cursor: pointer;
         line-height: 5px;
         font-weight: 100;
@@ -53,12 +54,20 @@ label {
         flex-direction: column;
         margin-top: 20px;
         input {
-            width: 277px;
+            width: 279px;
             height: 27px;
             border-radius: 2px;
-            border: 1px solid #fdb508;
-            background-color: #ffffff;
+            border-radius: 2px;
+            border: 2px solid #fdb508;
+            background-color: #0c2c56;
             margin-top: 8px;
+            &::placeholder {
+                color: red;
+                padding-left: 7px;
+                color: #b3b2b2;
+                font-size: 14px;
+                font-weight: 400;
+            }
         }
     }
     &__textarea {
@@ -66,44 +75,59 @@ label {
         flex-direction: column;
         margin-top: 18px;
         textarea {
-            width: 277px;
-            height: 156px;
+            width: 279px;
+            height: 153px;
             border-radius: 2px;
-            border: 1px solid #fdb508;
-            background-color: #ffffff;
+            border: 2px solid #fdb508;
+            background-color: #0c2c56;
             resize: none;
-            margin-top: 6px;
+            margin-top: 6px;          
+            &::placeholder {
+                color: red;
+                padding-left: 7px;
+                padding-top: 5px;
+                color: #b3b2b2;
+                font-size: 14px;
+                font-weight: 400;
+            }
+
         }
         
     }
     &__captcha {
         display: flex;
-        margin-top: 12px;
+        align-items: flex-start;
+        margin-top: 17px;
     }
     &__captcha-img {
-        margin-top: 6px;
+        margin-top: 10px;
     }
     &__captcha-input {
         margin-left: 6px;
+        margin-top: -3px;
         input {
             width: 139px;
             height: 27px;
             border-radius: 2px;
-            border: 1px solid #fdb508;
-            background-color: #ffffff;
+            border: 2px solid #fdb508;
+            background-color: #0c2c56;
+            
+            
 
         }
         label {
-            color: #000000;
+            color: #ffffff;
             font-size: 12px;
             font-weight: 500;
             text-align: left;
+            display: block;
+            margin-bottom: 5px;
         }
     }
     &__button {
         display: flex;
         justify-content: center;
-        margin-top: 43px;
+        margin-top: 37px;
         
     }
     &__btn {
@@ -115,6 +139,10 @@ label {
         font-size: 18px;
         font-weight: 400;
         text-transform: uppercase;
+        cursor: pointer;
+        &:hover, &:focus {
+            background-color: #011a26;
+        }
 
     }
 }

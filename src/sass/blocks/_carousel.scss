@@ -28,6 +28,9 @@
     }
     svg {
         fill: #5d6e75;
+        &:hover, &:focus {
+            fill: #095087;
+        }
     }
     .slick-prev {
         left: 145px;
