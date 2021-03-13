@@ -1370,6 +1370,8 @@ label span {
 
 .carousel svg {
   fill: #5d6e75;
+  height: 58px;
+  width: 34px;
 }
 
 .carousel svg:hover, .carousel svg:focus {
