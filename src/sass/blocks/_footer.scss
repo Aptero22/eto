@@ -65,6 +65,9 @@
             font-family: "Roboto Medium";
             font-weight: 500;
             text-decoration: underline;
+            &:hover, &:focus {
+                text-decoration: none;
+            }
         }
     }
     &__wrapper-left {

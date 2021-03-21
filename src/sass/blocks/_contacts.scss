@@ -51,6 +51,9 @@
         font-size: 18px;
         font-weight: 400;
         cursor: pointer;
+        &:hover, &:focus {
+            background-color: #085086;
+        }
     }
     &__wrapper-left-img {
         position: absolute;

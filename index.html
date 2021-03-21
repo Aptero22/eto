@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="./src/css/slick.css">
     <link rel="stylesheet" href="./src/css/style.min.css">
 </head>
@@ -19,7 +19,7 @@
             <img src="./src/icons/ecva_color.png" alt="color">
         </div>
         <div class="header__line-left">
-            <img src="./src/img/line_green.png" alt="green">
+            <img src="./src/img/line_green04.png" alt="green">
         </div>
         <div class="header__line-left_blue">
             <img src="./src/img/line_blue.png" alt="green">
@@ -34,7 +34,7 @@
                     </div>
                     <div class="header__wrapper">
                         <div class="header__btn">
-                            <button class="header__button">ЗАКАЗАТЬ ЗВОНОК</button>
+                            <button class="header__button" data-modal="consultation">ЗАКАЗАТЬ ЗВОНОК</button>
                         </div>
                         <div class="header__phone">
                             <a href="tel:73852248673" class="header__tell">+7 (3852)  <span>24 86 73</span></a>
@@ -64,8 +64,8 @@
         </div>
     </section>
     <section class="carousel">
-        <ul class="home__wrapper">
-            <div class="home__submenu">
+        <div class="home__wrapper">
+            <ul class="home__submenu">
                 <li class="home__submenu_item">
                     <a href="#" class="home__submenu_link">Звуковое и музыкальное оборудование </a>
                 </li>
@@ -75,8 +75,8 @@
                 <li class="home__submenu_item">
                     <a href="#" class="home__submenu_link">Студия звукозаписи</a>
                 </li>
-            </div>
-        </ul>
+            </ul>
+        </div>
             <div class="carousel__inner">
                 <div>
                     <div class="carousel__slide-two">
@@ -518,7 +518,7 @@
                     </div>
                 </div>
                 <div class="contacts__wrapper-item">
-                    <button class="contacts__button">ЗАКАЗАТЬ ЗВОНОК</button>
+                    <button class="contacts__button" data-modal="consultation">ЗАКАЗАТЬ ЗВОНОК</button>
                 </div>
             </div>
         </div>
@@ -601,9 +601,25 @@
                 
             </form>
         </div>
+
+        <div class="modal modal-phone" id="consultation">
+            <div class="modal__top">
+                <div class="modal__top-subtitle">Заполните форму заявки</div>
+                <div class="modal__top-close">&times;</div>
+            </div>
+            <form>
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш номер телефона*">
+                <div class="modal__button">
+                    <button class="modal__btn modal-btn">заказать звонок</button>
+                </div>
+            </form>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="./src/js/slick.min.js"></script>
+    <script src="./src/js/jquery.validate.min.js"></script>
+    <script src="./src/js/jquery.maskedinput.min.js"></script>
     <script src="./src/js/script.js"></script>
 </body>
 </html>

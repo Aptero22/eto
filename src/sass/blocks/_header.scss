@@ -27,6 +27,9 @@
         font-size: 14px;
         font-weight: 400;
         cursor: pointer;
+        &:hover, &:focus {
+            background-color: #085086;
+        }
 
     }
     &__phone {
@@ -99,7 +102,7 @@
     }
     &__line-left {
         position: absolute;
-        top: 104px;
+        top: 114px;
         left: 265px;
         z-index: 200;
         &_blue {

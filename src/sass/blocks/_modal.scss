@@ -48,6 +48,9 @@ label {
         cursor: pointer;
         line-height: 5px;
         font-weight: 100;
+        &:hover, &:focus {
+            color: #9e9e9e;
+        }
     }
     &__input {
         display: flex;
@@ -60,6 +63,7 @@ label {
             border-radius: 2px;
             border: 2px solid #fdb508;
             background-color: #0c2c56;
+            color: #b3b2b2;
             margin-top: 8px;
             &::placeholder {
                 color: red;
@@ -80,10 +84,10 @@ label {
             border-radius: 2px;
             border: 2px solid #fdb508;
             background-color: #0c2c56;
+            color: #b3b2b2;
             resize: none;
             margin-top: 6px;          
             &::placeholder {
-                color: red;
                 padding-left: 7px;
                 padding-top: 5px;
                 color: #b3b2b2;
@@ -111,8 +115,6 @@ label {
             border-radius: 2px;
             border: 2px solid #fdb508;
             background-color: #0c2c56;
-            
-            
 
         }
         label {
@@ -145,8 +147,28 @@ label {
         }
 
     }
+    &.modal-phone {
+        min-height: 200px;
+        input {
+            width: 279px;
+            height: 27px;
+            border-radius: 2px;
+            border-radius: 2px;
+            border: 2px solid #fdb508;
+            background-color: #0c2c56;
+            color: #b3b2b2;
+            margin-top: 8px;
+            &::placeholder {
+                padding-left: 7px;
+                color: #b3b2b2;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+    
 }
 
-#new_review {
+#new_review, #consultation {
     display: none;
 }
