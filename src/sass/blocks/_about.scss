@@ -1,5 +1,17 @@
 .about {
     padding-top: 90px;
+    &__second {
+        padding-bottom: 194px;
+        padding-top: 121px;
+    }
+    &__services {
+        padding-top: 115px;
+        padding-bottom: 417px;
+    }
+    &__installations {
+        padding-top: 121px;
+        padding-bottom: 80px;
+    }
     &__wrapper {
         margin-left: 165px;
         position: relative;
@@ -22,6 +34,10 @@
         font-weight: 400;
         line-height: 36px;
         text-align: left;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 30px;
     }
     &__wrapper-btn {
         display: flex;
@@ -48,5 +64,57 @@
     }
     span {
         color: #f4b407;
+        
+    }
+    .blue {
+        color: #0a6ab2;
+    }
+    &__workshop {
+        padding: 20px 20px 22px 20px;
+        border: 2px solid #f4b407;
+        width: 909px;
+        position: relative;
+        margin-top: 34px;
+        &-img {
+            position: absolute;
+            top: 496px;
+        }
+        &_wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-subtitle {
+            text-align: center;
+            margin-top: 23px;
+        }
+    }
+    &__installation {
+        padding: 20px 20px 22px 20px;
+        border: 2px solid #f4b407;
+        width: 909px;
+        position: relative;
+        margin-top: 34px;
+        &-img {
+            position: absolute;
+            top: 511px;
+        }
+        &_wrapper {
+            display: flex;
+            justify-content: center;
+        }
+        &-subtitle {
+            text-align: center;
+            margin-top: 23px;
+        }
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        padding-top: 40px;
+        li::before {
+            content: "\2022";
+            color: #0a6ab2;
+        }
     }
 }
