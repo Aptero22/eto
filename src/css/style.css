@@ -805,6 +805,11 @@ p {
   text-align: center;
 }
 
+.articles .title_art {
+  text-align: left;
+  padding-left: 162px;
+}
+
 .articles__wrapper {
   position: relative;
   width: 949px;
@@ -1009,6 +1014,10 @@ p {
   position: relative;
 }
 
+.contacts__second {
+  padding-top: 135px;
+}
+
 .contacts__wrapper-contact {
   width: 100%;
   height: 127px;
@@ -1016,8 +1025,43 @@ p {
   margin-top: 25px;
 }
 
+.contacts__wrapper-second {
+  background-color: #001321;
+  height: 100%;
+}
+
 .contacts__wrapper {
   margin-left: 160px;
+  padding-top: 41px;
+}
+
+.contacts__wrapper:first-child {
+  padding-top: 0;
+}
+
+.contacts__wrapper_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 61px;
+  margin-bottom: 45px;
+}
+
+.contacts__wrapper_list li {
+  color: #b4deff;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.contacts__wrapper_list li span {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.contacts__wrapper_list li:first-child {
+  color: #ffffff;
+  margin-top: 0;
 }
 
 .contacts__wrapper-contact-deep {
@@ -1075,10 +1119,20 @@ p {
   background-color: #085086;
 }
 
-.contacts__wrapper-left-img {
+.contacts__wrapper-img {
   position: absolute;
   left: 457px;
   top: 103px;
+}
+
+.contacts__wrapper-img-top {
+  top: 170px;
+}
+
+.contacts__wrapper-img-low {
+  position: absolute;
+  left: 457px;
+  top: 362px;
 }
 
 .footer {
