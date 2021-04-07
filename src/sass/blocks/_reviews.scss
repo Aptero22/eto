@@ -1,5 +1,9 @@
 .reviews {
     padding-top: 52px;
+    &__second {
+        padding-top: 121px;
+        padding-bottom: 181px;
+    }
     .title {
         margin-left: 160px;
     }
@@ -22,7 +26,7 @@
         left: 330px;
     }
     &__subtitle {
-        margin-top: 46px;
+        padding-top: 46px;
         color: #fdfdfd;
         font-size: 24px;
         font-weight: 500;
@@ -37,12 +41,27 @@
         font-weight: 400;
         line-height: 26px;
         text-align: left;
+        &-second {
+            width: 945px;
+        }
     }
     &__wrapper-right {
         display: flex;
         align-items: center;
         margin-left: 475px;
         margin-top: 20px;
+    }
+    &__wrapper-second {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 175px;
+        padding-top: 24px;
+    }
+    &__date {
+        color: #f4b407;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
     }
     &__link {
         a {
@@ -70,5 +89,43 @@
         &:hover, &:focus {
             background-color: #011a26;
         }
+        &-info {
+            &:hover, &:focus {
+                background-color: #0c2c56;
+            }
+        }
+    }
+    &__description {
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: left;
+    }
+    &__info {
+        padding-left: 160px;
+        display: flex;
+        align-items: center;
+        padding-bottom: 41px;
+        padding-top: 35px;
+    }
+    &__wrapper-info {
+        padding-left: 174px;
+    }
+    &__img {
+        left: 455px;
+        top: 280px;
+        position: absolute;
+    }
+}
+
+.comments {
+    .comment {
+        &:nth-child(odd) {
+            background-color: #0c2c56;
+        }
+    }
+    &__wrapper {
+        padding-left: 160px;
+        padding-bottom: 36px;
     }
 }

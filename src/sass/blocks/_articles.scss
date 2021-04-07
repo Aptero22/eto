@@ -1,5 +1,9 @@
 .articles {
     padding-top: 117px;
+    &__second {
+        padding-top: 121px;
+        padding-bottom: 258px;
+    }
     .title {
         text-align: center;
         &_art {
@@ -80,6 +84,11 @@
         margin-left: 1013px;
         margin-right: 32px;
         margin-top: 28px;
+        &-second {
+            margin-top: 57px;
+            text-align: right;
+            padding-right: 155px;
+        }
         a {
             color: #085086;
             font-size: 18px;
@@ -100,5 +109,55 @@
         position: absolute;
         left: 65px;
         top: 246px;
+    }
+    &__img {
+        top: 277px;
+        left: 455px;
+        position: absolute;
+    }
+    &__description {
+        max-width: 933px;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 36px;
+        padding-right: 22px;
+        margin: 0 auto;
+        padding-top: 35px;
+    }
+    &__wrapper_second {
+        margin-top: 36px;
+    }
+    &__pagination {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        li {
+            display: inline;
+            a {
+                text-decoration: none;
+                padding: 4px 6px;
+                color: #0a6ab2;
+                font-size: 14px;
+                font-weight: 500;
+                text-transform: uppercase;
+                &.active {
+                    background-color: #085086;
+                    color: white;
+                }
+                &:hover, &:focus {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+    svg {
+        fill: #5e6366;
+        height: auto;
+        width: 16px;
+        vertical-align: middle;
+        &:hover, &:focus {
+            fill: #095087;
+        }
     }
 }
