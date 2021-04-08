@@ -34,7 +34,9 @@
                     </div>
                     <div class="header__wrapper">
                         <div class="header__btn">
-                            <button class="header__button" data-modal="consultation">ЗАКАЗАТЬ ЗВОНОК</button>
+                            <button class="header__button open_consultation" data-modal="consultation">
+                                ЗАКАЗАТЬ ЗВОНОК
+                            </button>
                         </div>
                         <div class="header__phone">
                             <a href="tel:73852248673" class="header__tell">+7 (3852)  <span>24 86 73</span></a>
@@ -78,7 +80,7 @@
             </ul>
         </div>
     </section>
-    <section class="shop">
+    <section class="shop shop__patent">
         <div class="container">
             <div class="breadcrumb__wrapper">
                 <ol class="breadcrumb">
@@ -118,7 +120,7 @@
                     </div>
                     <div class="shop__card_buttons">
                         <div>
-                            <button data-modal="new_review">
+                            <button class="open_review" data-modal="new_review">
                                 Заказать
                             </button>
                         </div>
@@ -135,7 +137,7 @@
                         </div>
                         <div class="cSlider__item">
                             <div class="cSlider__single">
-                                <img src="./src/img/slide__2big.jpg" alt="2">
+                                <img src="./src/img/slide__patent.png" alt="patent">
                             </div>
                         </div>
                         <div class="cSlider__item">
@@ -193,7 +195,7 @@
                             </div>
                             <div class="cSlider__item">
                                 <div class="cSlider__nav">
-                                    <img src="./src/img/slide__2.png" alt="2">
+                                    <img src="./src/img/slide__patent_small.png" alt="patent_small">
                                 </div>
                             </div>
                             <div class="cSlider__item">
@@ -226,6 +228,13 @@
                     
                 </div>
             </div>
+            <div class="shop__descr shop__descr_patent">
+                <p class="blue">Подробнее:</p>
+                <p><a class="shop__link" href="#">Описание</a></p>
+                <p><a class="shop__link" href="#">Технические характеристики</a></p>
+                <p><a class="shop__link" href="#">Руководство по эксплуатации</a></p>                  
+            </div>
+        </div>
     </section>
     <footer class="footer">
         <div class="container">
@@ -272,16 +281,20 @@
             <img src="./src/icons/ecva_footer.png" alt="ecva_footer">
         </div>
     </footer>
-    <div class="overlay " id="overlay_review">
+    <div class="overlay" id="overlay_review">
         <div class="modal modal_review">
             <div class="modal__top">
-                <div class="modal__top-subtitle">оставить свой отзыв</div>
+                <div class="modal__top-subtitle">Заказать</div>
                 <div class="modal__top-close">&times;</div>
             </div>
             <form>
                 <div class="modal__input">
                     <label for="name">Ваше имя<span><sup>*</sup></span></label>
                     <input required name="name" placeholder="Иван Беспалов" id ="name" type="text">
+                </div>
+                <div class="modal__input">
+                    <label for="name">Ваш телефон<span><sup>*</sup></span></label>
+                    <input name="phone" required placeholder="8-901-555-5555">
                 </div>
                 <div class="modal__textarea">
                     <label for="text">Сообщение<span><sup>*</sup></span></label>
@@ -297,7 +310,7 @@
                     </div>
                 </div>
                 <div class="modal__button">
-                    <button class="modal__btn">оставить отзыв</button>
+                    <button class="modal__btn">Заказать</button>
                 </div>
                 
             </form>

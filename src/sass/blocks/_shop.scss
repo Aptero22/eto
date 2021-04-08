@@ -7,6 +7,9 @@
     &__signaling {
         padding-bottom: 956px;
     }
+    &__patent {
+        padding-bottom: 219px;
+    }
     &__wrapper-link {
         margin-left: 165px;
         display: flex;
@@ -222,6 +225,18 @@
             display: block;
             &:hover, &:focus {
                 text-decoration: none;
+            }
+        }
+        &_patent {
+            margin-left: 165px;
+            .blue {
+                margin-bottom: 10px;
+            }
+            a {
+                margin-bottom: 6px;
+                &:last-child {
+                    margin-bottom: 0px;
+                }
             }
         }
     }

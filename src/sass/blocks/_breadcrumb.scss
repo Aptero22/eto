@@ -1,12 +1,3 @@
-// .breadcrumb {
-//     margin-left: 165px;
-//     &__wrapper {
-//         list-style: none;
-//         margin: 0;
-//         padding: 0;
-//         display: flex;
-//     }
-// }
 
 .breadcrumb {
     list-style: none;
@@ -26,14 +17,20 @@
 }
 .breadcrumb li a {
     color: #0a6ab2;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: underline;
+    &:hover, &:focus {
+        text-decoration: none;
+    }
 }
 .breadcrumb .active {
-    color: #f49807;
+    color: #f4b407;
     font-size: 12px;
     font-weight: 400;
 
 }
-.breadcrumb>li+li:before {
+.breadcrumb li+li:before {
     color: #0a6ab2;
     content: "/\00a0";
 }

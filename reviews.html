@@ -35,7 +35,9 @@
                     </div>
                     <div class="header__wrapper">
                         <div class="header__btn">
-                            <button class="header__button" data-modal="consultation">ЗАКАЗАТЬ ЗВОНОК</button>
+                            <button class="header__button open_consultation" data-modal="consultation">
+                                ЗАКАЗАТЬ ЗВОНОК
+                            </button>
                         </div>
                         <div class="header__phone">
                             <a href="tel:73852248673" class="header__tell">+7 (3852)  <span>24 86 73</span></a>
@@ -82,6 +84,12 @@
     <section class="reviews reviews__second">
         <div class="review">
             <div class="container">
+                <div class="breadcrumb__wrapper">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                        <li class="breadcrumb-item active">Отзывы</li>
+                    </ol> 
+                </div>
                 <h2 class="title title_art">отзывы</h2>
                 <div class="reviews__img">
                     <img src="./src/img/line.png" alt="line">
@@ -91,7 +99,7 @@
                         Прочитайте отзывы наших клиентов или добавьте свой.
                     </div>
                     <div class="reviews__wrapper-btn reviews__wrapper-info">
-                        <button data-modal="new_review" class="reviews__btn reviews__btn-info">
+                        <button data-modal="new_review" class="reviews__btn reviews__btn-info open_review">
                             оставить отзыв
                         </button>
                     </div>
@@ -199,22 +207,8 @@
         </div>
     </footer>
 
-    <div class="overlay">
-        <div class="modal modal-phone" id="consultation">
-            <div class="modal__top">
-                <div class="modal__top-subtitle">Заполните форму заявки</div>
-                <div class="modal__top-close">&times;</div>
-            </div>
-            <form>
-                <input name="name" placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш номер телефона*">
-                <div class="modal__button">
-                    <button class="modal__btn modal-btn">заказать звонок</button>
-                </div>
-            </form>
-        </div>
-
-        <div class="modal" id="new_review">
+    <div class="overlay " id="overlay_review">
+        <div class="modal modal_review">
             <div class="modal__top">
                 <div class="modal__top-subtitle">оставить свой отзыв</div>
                 <div class="modal__top-close">&times;</div>
@@ -241,6 +235,21 @@
                     <button class="modal__btn">оставить отзыв</button>
                 </div>
                 
+            </form>
+        </div>
+    </div>
+    <div class="overlay" id="overlay_consultation">
+        <div class="modal modal_consultation modal-phone">
+            <div class="modal__top">
+                <div class="modal__top-subtitle">Заполните форму заявки</div>
+                <div class="modal__top-close">&times;</div>
+            </div>
+            <form>
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш номер телефона*">
+                <div class="modal__button">
+                    <button class="modal__btn modal-btn">заказать звонок</button>
+                </div>
             </form>
         </div>
     </div>

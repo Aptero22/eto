@@ -304,16 +304,16 @@ p {
 
 .about__second {
   padding-bottom: 194px;
-  padding-top: 121px;
+  padding-top: 62px;
 }
 
 .about__services {
-  padding-top: 115px;
+  padding-top: 62px;
   padding-bottom: 417px;
 }
 
 .about__installations {
-  padding-top: 121px;
+  padding-top: 62px;
   padding-bottom: 80px;
 }
 
@@ -818,7 +818,7 @@ p {
 }
 
 .articles__second {
-  padding-top: 121px;
+  padding-top: 62px;
   padding-bottom: 258px;
 }
 
@@ -1011,7 +1011,7 @@ p {
 }
 
 .reviews__second {
-  padding-top: 121px;
+  padding-top: 62px;
   padding-bottom: 181px;
 }
 
@@ -1171,7 +1171,7 @@ p {
 }
 
 .contacts__second {
-  padding-top: 135px;
+  padding-top: 62px;
 }
 
 .contacts__wrapper-contact {
@@ -1189,6 +1189,10 @@ p {
 .contacts__wrapper {
   margin-left: 160px;
   padding-top: 41px;
+}
+
+.contacts__wrapper_second {
+  padding-top: 15px;
 }
 
 .contacts__wrapper:first-child {
@@ -1258,6 +1262,11 @@ p {
   font-weight: 400;
   line-height: 20px;
   text-align: left;
+}
+
+.contacts__wrapper-text a {
+  text-decoration: none;
+  color: #b4deff;
 }
 
 .contacts__button {
@@ -1484,14 +1493,14 @@ label span {
   width: 22px;
   height: 22px;
   font-size: 50px;
-  color: #011a26;
+  color: #9e9e9e;
   cursor: pointer;
   line-height: 5px;
   font-weight: 100;
 }
 
 .modal__top-close:hover, .modal__top-close:focus {
-  color: #9e9e9e;
+  color: #011a26;
 }
 
 .modal__input {
@@ -1676,7 +1685,7 @@ label span {
   border: 2px solid #fdb508;
   background-color: #0c2c56;
   color: #b3b2b2;
-  margin-top: 8px;
+  margin-top: 20px;
 }
 
 .modal.modal-phone input::-webkit-input-placeholder {
@@ -1821,7 +1830,7 @@ label span {
 }
 
 .acoustics {
-  padding-top: 115px;
+  padding-top: 62px;
   padding-bottom: 625px;
 }
 
@@ -1992,7 +2001,7 @@ label span {
 }
 
 .studio {
-  padding-top: 121px;
+  padding-top: 62px;
   padding-bottom: 338px;
 }
 
@@ -2093,6 +2102,10 @@ label span {
 
 .shop__signaling {
   padding-bottom: 956px;
+}
+
+.shop__patent {
+  padding-bottom: 219px;
 }
 
 .shop__wrapper-link {
@@ -2384,6 +2397,22 @@ label span {
   text-decoration: none;
 }
 
+.shop__descr_patent {
+  margin-left: 165px;
+}
+
+.shop__descr_patent .blue {
+  margin-bottom: 10px;
+}
+
+.shop__descr_patent a {
+  margin-bottom: 6px;
+}
+
+.shop__descr_patent a:last-child {
+  margin-bottom: 0px;
+}
+
 .shop__link {
   margin-bottom: 65px;
 }
@@ -2452,15 +2481,22 @@ label span {
 
 .breadcrumb li a {
   color: #0a6ab2;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.breadcrumb li a:hover, .breadcrumb li a:focus {
+  text-decoration: none;
 }
 
 .breadcrumb .active {
-  color: #f49807;
+  color: #f4b407;
   font-size: 12px;
   font-weight: 400;
 }
 
-.breadcrumb > li + li:before {
+.breadcrumb li + li:before {
   color: #0a6ab2;
   content: "/\00a0";
 }
