@@ -4,16 +4,28 @@
         padding-top: 62px;
         padding-bottom: 181px;
     }
+    .reviews_768px {
+        display: none;
+    }
     .title {
         margin-left: 160px;
     }
     &__wrapper {
         background-color: #0c2c56;
-        display: flex;
         position: relative;
         max-width: 1280px;
         margin: 0 auto;
         margin-top: 25px;
+        padding-bottom: 17px;
+        > img {
+            &:first-child {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: auto;
+                height: 100%;
+            }
+        }
     }
     &__wrapper-img {
         position: absolute;
@@ -21,9 +33,12 @@
         left: 145px;
     }
     &__wrapper-comment {
-        position: absolute;
-        top: 0;
-        left: 330px;
+        // position: absolute;
+        // top: 0;
+        // left: 330px;
+        margin-left: 330px;
+        // z-index: 2000;
+        position: relative;
     }
     &__subtitle {
         padding-top: 46px;

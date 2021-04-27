@@ -1,9 +1,6 @@
 .overlay {
     position: fixed;
     overflow: hidden;
-    // width: 100%;
-    // height: 100%;
-    // top: 0;
     background-color: rgba(0, 0, 0, 0.56);
     width: 0px;
     height: 0;
@@ -11,6 +8,7 @@
     left: 0;
     top: 0;
     transition: opacity 0.15s ease-out, width 0s linear 0.15s, height 0s linear 0.15s;
+    z-index: 4000;
     &.visible {
         width: 100%;
         height: 100%;
@@ -32,7 +30,7 @@ label {
     font-size: 15px;
 }
 .modal {
-    width: 347px;
+    max-width: 347px;
     min-height: 479px;
     border: 2px solid #fdb508;
     background: #0c2c56;
@@ -69,7 +67,8 @@ label {
         flex-direction: column;
         margin-top: 20px;
         input {
-            width: 279px;
+            max-width: 279px;
+            width: 100%;
             height: 27px;
             border-radius: 2px;
             border-radius: 2px;
@@ -91,7 +90,8 @@ label {
         flex-direction: column;
         margin-top: 18px;
         textarea {
-            width: 279px;
+            max-width: 279px;
+            width: 100%;
             height: 153px;
             border-radius: 2px;
             border: 2px solid #fdb508;
@@ -116,7 +116,8 @@ label {
         margin-top: 17px;
     }
     &__captcha-img {
-        margin-top: 10px;
+        margin-top: 22px;
+
     }
     &__captcha-input {
         margin-left: 6px;
@@ -162,7 +163,8 @@ label {
     &.modal-phone {
         min-height: 200px;
         input {
-            width: 279px;
+            width: 100%;
+            max-width: 279px;
             height: 27px;
             border-radius: 2px;
             border-radius: 2px;

@@ -1,13 +1,13 @@
 .home {
     &__wrapper {
         width: 100%;
-        height: 46px;
         background-color: rgba($color: #085086, $alpha: 0.78);
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 0;
         padding: 0;
+        padding: 13px 0;
         list-style-type: none;
         border-top: 1px solid #fdb508;
         position: absolute;

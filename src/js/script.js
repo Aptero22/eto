@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('.carousel__inner').slick({
         speed: 1200,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000,
         adaptiveHeight: true,
         prevArrow: $(".slick-prev"),
@@ -28,7 +28,21 @@ $(document).ready(function(){
     const button_consultation = document.querySelectorAll('.open_consultation');
     const modal_review = query('.overlay .modal_review');
     const modal_consultation = query('.overlay .modal_consultation');
+
+    // Menu 320px
+
+    const menu = get('menu');
+    const hamburger = get('hamburger');
+    const menu_overlay = get('menu_overlay');
+
+    menu_overlay.addEventListener('click', menu_overlayClick);
     
+    hamburger.addEventListener('click', function (event) {
+            menu_overlay.classList.add('active');
+    });
+
+    menu.addEventListener('click', modalClick);
+
     overlay_review.addEventListener('click', overlay_reviewClick);
     overlay_consultation.addEventListener('click', overlay_consultationClick);
     button_review.forEach(function (entry) { 
@@ -47,6 +61,9 @@ $(document).ready(function(){
     function overlay_reviewClick() {
         overlay_review.classList.remove('visible');
     }
+    function menu_overlayClick() {
+        menu_overlay.classList.remove('active');
+    }
 
     function overlay_consultationClick() {
         overlay_consultation.classList.remove('visible');
@@ -62,6 +79,10 @@ $(document).ready(function(){
     $('.modal__top-close').on('click', function() {
         overlay_review.classList.remove('visible');
         overlay_consultation.classList.remove('visible');
+    });
+
+    $('.menu__close').on('click', function() {
+        menu_overlay.classList.remove('active');
     });
 
     function valideForms(form) {

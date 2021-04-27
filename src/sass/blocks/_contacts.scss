@@ -6,13 +6,17 @@
     }
     &__wrapper-contact {
         width: 100%;
-        height: 127px;
+        padding-bottom: 37px;
         background-color: #011a26;
         margin-top: 25px;
     }
     &__wrapper-second {
         background-color: #001321;
         height: 100%;
+    }
+    &__768px {
+        display: flex;
+        margin-right: 10px;
     }
     &__wrapper {
         margin-left: 160px;
@@ -50,7 +54,7 @@
         display: flex;
         justify-content: center;
         padding-top: 33px;
-        padding-right: 55px;
+        margin-left: 20px;
         
     }
     &__wrapper-item {
@@ -107,5 +111,15 @@
         position: absolute;
         left: 457px;
         top: 362px;
+    }
+    &__map-right {
+        display: none;
+    }
+    iframe {
+        display: block;
+        border: 0;
+        width: 100%;
+        height: 532px;
+        
     }
 }

@@ -3,6 +3,7 @@
     padding: 21px 0;
     background-color: #011a26;
     position: relative;
+
     &__top {
         display: flex;
         align-items: center;
@@ -56,6 +57,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-top: 7px;
     }
     &__menu {
         display: flex;
@@ -91,25 +93,40 @@
     }
     &__abs-right {
         position: absolute;
-        top: 60px;
+        top: 58px;
         right: 40px
     }
     &__abs-right-low {
         position: absolute;
-        top: 134px;
+        top: 1px;
         right: 40px;
         z-index: 200;
     }
     &__line-left {
         position: absolute;
-        top: 114px;
+        top: 108px;
         left: 265px;
         z-index: 200;
         &_blue {
             position: absolute;
-            top: 114px;
+            top: 107px;
             left: 290px;
             z-index: 150;
         }
+    }
+    &__logo-wrapper {
+        display: flex;
+        img {
+            &:first-child {
+                margin-left: 9px;
+                margin-right: 6px;
+            }
+        }
+    }
+    &__block320px {
+        display: none;
+    }
+    &__hamburger {
+        display: none;
     }
 }

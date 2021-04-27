@@ -15,9 +15,7 @@
         <div class="header__abs-right">
             <img src="./src/icons/ecva_2.png" alt="ecva_2">
         </div>
-        <div class="header__abs-right-low">
-            <img src="./src/icons/ecva_color.png" alt="color">
-        </div>
+
         <div class="header__line-left">
             <img src="./src/img/line_green04.png" alt="green">
         </div>
@@ -29,12 +27,17 @@
                 <div class="header__top">
                     <div class="header__logo">
                         <a class="header__link" href="#">
-                            <img src="./src/icons/logo.png" alt="logo">
+                            <img class="responsive logo_1" src="./src/icons/logo.png" alt="logo">
                         </a>
                     </div>
                     <div class="header__wrapper">
                         <div class="header__btn">
                             <button class="header__button open_consultation" data-modal="consultation">ЗАКАЗАТЬ ЗВОНОК</button>
+                        </div>
+                        <div class="header__hamburger" id="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
                         <div class="header__phone">
                             <a href="tel:73852248673" class="header__tell">+7 (3852)  <span>24 86 73</span></a>
@@ -44,8 +47,8 @@
                 </div>
                 <div class="header__low">
                     <div class="header__logo-wrapper">
-                        <img src="./src/icons/logo_2.png" alt="logo_2">
-                        <img src="./src/icons/logo_3.png" alt="logo_3">
+                        <img class="responsive logo_2" src="./src/icons/logo_2.1.png" alt="logo_2">
+                        <img class="responsive logo_3" src="./src/icons/logo_3.1.png" alt="logo_3">
                     </div>
                     <nav>
                         <ul class="header__menu">
@@ -60,10 +63,16 @@
                         </ul>
                     </nav>
                 </div>
+                <div class="header__block320px">
+                    <button class="header__button open_consultation" data-modal="consultation">ЗАКАЗАТЬ ЗВОНОК</button>
+                </div>
             </header>
         </div>
     </section>
     <section class="carousel">
+        <div class="header__abs-right-low">
+                <img src="./src/icons/ecva_color.png" alt="color">
+        </div>
         <div class="home__wrapper">
             <ul class="home__submenu">
                 <li class="home__submenu_item">
@@ -75,7 +84,7 @@
                 <li class="home__submenu_item">
                     <a href="#" class="home__submenu_link">Студия звукозаписи</a>
                 </li>
-            </ul>
+            </ul>        
         </div>
             <div class="carousel__inner">
                 <div>
@@ -85,28 +94,28 @@
                                 <div class="carousel__two_box">
                                     <div class="carousel__two_top">
                                         <div class="carousel__two_logo">
-                                            <img src="./src/icons/slide_logo1.png" alt="logo1">
+                                            <img class="logo_1" src="./src/icons/slide_logo1.png" alt="logo1">
                                         </div>
                                         <div class="carousel__two__desrc">
-                                            Экспериментальное 
+                                            Экспериментальное<br> 
                                             Творческое Объединение
                                         </div>
                                     </div>
                                     <div class="carousel__two_middle">
                                         <div class="carousel__two_logo">
-                                            <img src="./src/icons/slide_logo2.png" alt="logo2">
+                                            <img class="logo_4" src="./src/icons/slide_logo2.png" alt="logo2">
                                         </div>
                                         <div class="carousel__two__desrc">
-                                            Design Electronic 
+                                            Design Electronic<br> 
                                             Laboratory
                                         </div>
                                     </div>
                                     <div class="carousel__two_low">
                                         <div class="carousel__two_logo">
-                                            <img src="./src/icons/slide_logo3.png" alt="logo3">
+                                            <img class="logo_5" src="./src/icons/slide_logo3.png" alt="logo3">
                                         </div>
                                         <div class="carousel__two__desrc">
-                                            Лаборатория 
+                                            Лаборатория<br> 
                                             Акустического Дизайна                 
                                         </div>
                                     </div>
@@ -377,7 +386,11 @@
     <section class="installations">
         <div class="container">
              <div class="installations__wrapper">
-                <img src="./src/img/installations.png" alt="installations">
+                <img class="resolution_desctop" src="./src/img/installations.png" alt="installations">
+                <img class="resolution_1000px" src="./src/img/installations_img1000.png" alt="installations_1000px">
+                <img class="resolution_768px" src="./src/img/installations_img768.png" alt="installations_768px">
+                <img class="resolution_480px" src="./src/img/installations_img480.png" alt="installations_480px">
+                <img class="resolution_320px" src="./src/img/installations_img320.png" alt="installations_320px">
                 <div class="installations__wrapper-info">
                     <div class="installations__wrapper-img">
                         <img src="./src/img/line.png" alt="line" class="line">
@@ -428,10 +441,10 @@
                 <div class="articles__subtitle">РУПОРНЫЕ АКУСТИЧЕСКИЕ СИСТЕМЫ</div>
                 <div class="articles__text">
                     <p>
-                        Определение понятия «Рупорные акустические системы».
-                        Принцип действия, основные отличия от прочих типов акустических систем.
-                        Достоинства и недостатки.
-                        Рекомендации по применению.
+                        Определение понятия «Рупорные акустические системы».<br>
+                        Принцип действия, основные отличия от прочих типов акустических систем.<br>
+                        Достоинства и недостатки.<br>
+                        Рекомендации по применению.<br>
                     </p>
                 </div>
                 <div class="articles__wrapper-btn">
@@ -452,7 +465,8 @@
         <div class="container">
             <h2 class="title">отзывы наших клиентов</h2>
             <div class="reviews__wrapper">
-                <img src="./src/img/anthony-delanoix.png" alt="anthony-delanoix">
+                <img class="reviews_1000px" src="./src/img/anthony-delanoix.png" alt="anthony-delanoix">
+                <img class="reviews_768px" src="./src/img/reviews_img768px.png" alt="reviews_768px">
                 <div class="reviews__wrapper-img">
                     <img src="./src/img/line.png" alt="line" class="line">
                 </div>
@@ -488,47 +502,52 @@
         </div>
         <div class="contacts__wrapper-contact">
             <div class="contacts__wrapper-contact-deep">
-                <div class="contacts__wrapper-item">
-                    <div class="contacts__wrapper-subtitle">Наш адрес</div>
-                    <div class="contacts__wrapper-text">
-                        Россия, г. Барнаул,<br> 
-                        ул. Гоголя, д. 6
+                <div class="contacts__768px">
+                    <div class="contacts__wrapper-item">
+                        <div class="contacts__wrapper-subtitle">Наш адрес</div>
+                        <div class="contacts__wrapper-text">
+                            Россия, г. Барнаул,<br> 
+                            ул. Гоголя, д. 6
+                        </div>
+                    </div>
+                    <div class="contacts__wrapper-item">
+                        <div class="contacts__wrapper-subtitle">контактное лицо</div>
+                        <div class="contacts__wrapper-text">
+                            Мелкомуков<br>
+                            Леонид Леонидович
+                        </div>
+                    </div>
+                    <div class="contacts__wrapper-item">
+                        <div class="contacts__wrapper-subtitle">телефон</div>
+                        <div class="contacts__wrapper-text">
+                            <a href="tel:73852248673">+7 (3852) 24-86-73<br></a>
+                            <a href="tel:73852248945">+7 (3852) 24-89-45</a>
+                        </div>
+                    </div>
+                    <div class="contacts__wrapper-item">
+                        <div class="contacts__wrapper-subtitle">e-mail</div>
+                        <div class="contacts__wrapper-text">
+                            ecadel@mail.ru
+                        </div>
                     </div>
                 </div>
-                <div class="contacts__wrapper-item">
-                    <div class="contacts__wrapper-subtitle">контактное лицо</div>
-                    <div class="contacts__wrapper-text">
-                        Мелкомуков<br>
-                        Леонид Леонидович
-                    </div>
-                </div>
-                <div class="contacts__wrapper-item">
-                    <div class="contacts__wrapper-subtitle">телефон</div>
-                    <div class="contacts__wrapper-text">
-                        <a href="tel:73852248673">+7 (3852) 24-86-73<br></a>
-                        <a href="tel:73852248945">+7 (3852) 24-89-45</a>
-                    </div>
-                </div>
-                <div class="contacts__wrapper-item">
-                    <div class="contacts__wrapper-subtitle">e-mail</div>
-                    <div class="contacts__wrapper-text">
-                        ecadel@mail.ru
-                    </div>
-                </div>
-                <div class="contacts__wrapper-item">
+                <div class="contacts__wrapper-button">
                     <button class="contacts__button open_consultation" data-modal="consultation">ЗАКАЗАТЬ ЗВОНОК</button>
                 </div>
             </div>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.296831925466!2d83.79952281597632!3d53.33794248304155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dda5b7df997289%3A0x607aa4dbdcac0633!2z0YPQuy4g0JPQvtCz0L7Qu9GPLCA2LCDQkdCw0YDQvdCw0YPQuywg0JDQu9GC0LDQudGB0LrQuNC5INC60YDQsNC5LCA2NTYwNTY!5e0!3m2!1sru!2sru!4v1614008715613!5m2!1sru!2sru" width="100%" height="532" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.296831925466!2d83.79952281597632!3d53.33794248304155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dda5b7df997289%3A0x607aa4dbdcac0633!2z0YPQuy4g0JPQvtCz0L7Qu9GPLCA2LCDQkdCw0YDQvdCw0YPQuywg0JDQu9GC0LDQudGB0LrQuNC5INC60YDQsNC5LCA2NTYwNTY!5e0!3m2!1sru!2sru!4v1614008715613!5m2!1sru!2sru" allowfullscreen="" loading="lazy"></iframe>
+        <div class="contacts__map-right">
+            <img src="./src/img/ecva_color.png" alt="ecva_color">
+        </div>
     </section>
 
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper-logo">
-                <img src="./src/icons/footer_logo_1.png" alt="eto">
-                <img src="./src/icons/footer_logo_2.png" alt="del">
-                <img src="./src/icons/footer_logo_3.png" alt="logo_3">
+                <img class="logo_1" src="./src/icons/footer_logo_1.png" alt="eto">
+                <img class="logo_2" src="./src/icons/footer_logo_2.png" alt="del">
+                <img class="logo_3" src="./src/icons/footer_logo_3.png" alt="logo_3">
             </div>
             <nav>
                 <ul class="footer__menu">
@@ -567,6 +586,31 @@
         <div class="footer__wrapper-right">
             <img src="./src/icons/ecva_footer.png" alt="ecva_footer">
         </div>
+
+        <div class="footer__ecva-1">
+            <img src="./src/img/ecva_img768px1.1.png" alt="ecva_footer">
+        </div>
+        <div class="footer__ecva-2">
+            <img src="./src/img/ecva_img768px1.2.png" alt="ecva_footer">
+        </div>
+
+        <div class="footer__ecva-3">
+            <img src="./src/img/ecva_img768px1.3.png" alt="ecva_footer">
+        </div>
+        <div class="footer__ecva-4">
+            <img src="./src/img/ecva_img768px1.4.png" alt="ecva_footer">
+        </div>
+
+        <div class="footer__ecva480_1">
+            <img src="./src/img/ecva_img480px1.1.png" alt="ecva_footer">
+        </div>
+        <div class="footer__ecva480_2">
+            <img src="./src/img/ecva_img480px1.2.png" alt="ecva_footer">
+        </div>
+        <div class="footer__ecva480_3">
+            <img src="./src/img/ecva_img480px1.3.png" alt="ecva_footer">
+        </div>
+
     </footer>
 
     <div class="overlay " id="overlay_review">
@@ -615,6 +659,25 @@
             </form>
         </div>
     </div>
+
+    <div class="menu" id="menu_overlay">
+        <div class="menu__block" id="menu">
+            <div class="menu__close">&times;</div>
+            <nav>
+                <ul class="header__menu">
+                    <li class="header__menu_item"><a href="#" class="header__menu_link">главная</a></li>
+                    <li class="header__menu_item"><a href="#" class="header__menu_link">о нас</a></li>
+                    <li class="header__menu_item"><a href="#" class="header__menu_link">продукция</a></li>
+                    <li class="header__menu_item"><a href="#" class="header__menu_link">услуги</a></li>
+                    <li class="header__menu_item"><a href="#" class="header__menu_link">инсталляции</a></li>
+                    <li class="header__menu_item"><a href="#" class="header__menu_link">статьи</a></li>
+                    <li class="header__menu_item"><a href="#" class="header__menu_link">отзывы</a></li>
+                    <li class="header__menu_item"><a href="#" class="header__menu_link">контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="./src/js/slick.min.js"></script>
     <script src="./src/js/jquery.validate.min.js"></script>

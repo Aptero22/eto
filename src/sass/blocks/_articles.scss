@@ -14,7 +14,8 @@
     &__wrapper {
         position: relative;
         width: 949px;
-        height: 397px;
+        height: auto;
+        padding-bottom: 20px;
         border: 2px solid #f4b407;
         margin: auto;
         margin-top: 56px;
@@ -49,7 +50,7 @@
         height: 40px;
         background-color: #085086;
         border: none;
-        margin: 35px 24px 21px 756px;
+        margin: 35px 24px 0 756px;
         cursor: pointer;
         &:hover, &:focus {
             .articles__wrapper, .articles__wrapper-last {
@@ -70,7 +71,8 @@
     &__wrapper-last {
         position: relative;
         width: 949px;
-        height: 265px;
+        height: auto;
+        padding-bottom: 21px;
         border: 2px solid #f4b407;
         margin: auto;
         margin-top: 35px;
@@ -108,7 +110,7 @@
     &__wrapper-low {
         position: absolute;
         left: 65px;
-        top: 246px;
+        top: 275px;
     }
     &__img {
         top: 277px;
