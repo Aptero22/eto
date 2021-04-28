@@ -1469,7 +1469,7 @@ p {
 }
 
 .footer__wrapper-left {
-  top: -3px;
+  top: 0px;
   position: absolute;
   left: 194px;
 }
@@ -1481,7 +1481,7 @@ p {
 }
 
 .footer__map-left {
-  top: -75px;
+  top: -72px;
   position: absolute;
   right: 299px;
 }
@@ -3395,13 +3395,13 @@ label span {
     display: block;
     position: absolute;
     left: 916px;
-    top: -3px;
+    top: 0px;
   }
   .footer__ecva-3 {
     display: block;
     position: absolute;
     left: 916px;
-    top: -65px;
+    top: -62px;
   }
   .footer__copy {
     padding: 0px 55px;
@@ -3758,22 +3758,22 @@ label span {
   .footer__ecva-1 {
     position: absolute;
     left: 0px;
-    top: -3px;
+    top: 0px;
   }
   .footer__ecva-2 {
     position: absolute;
     left: 642px;
-    top: -3px;
+    top: 0px;
   }
   .footer__ecva-3 {
     position: absolute;
     left: 642px;
-    top: -65px;
+    top: -62px;
   }
   .footer__ecva-4 {
     position: absolute;
     left: 727px;
-    top: -54px;
+    top: -50px;
   }
   .reviews .container {
     max-width: 100%;
@@ -4175,20 +4175,20 @@ label span {
   .footer__ecva480_1 {
     display: block;
     position: absolute;
-    top: -4px;
+    top: 0px;
     left: 0;
   }
   .footer__ecva480_2 {
     display: block;
     position: absolute;
-    top: -50px;
+    top: -46px;
     left: 427px;
   }
   .footer__ecva480_3 {
     display: block;
     position: absolute;
     left: 427px;
-    top: -4px;
+    top: 0px;
   }
 }
 
