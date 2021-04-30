@@ -1,6 +1,6 @@
-@media (max-width: 1001px) {
+@media (min-width: 769px) and (max-width: 1000px){
     .container {
-        max-width: 1000px ;
+        max-width: 100% ;
     }
     .header {
         overflow: hidden;
@@ -323,9 +323,9 @@
     }
 }
 
-@media (max-width: 769px) {
+@media (min-width: 481px) and (max-width: 768px) {
     .container {
-        max-width: 700px;
+        max-width: 100%;
     }
     .header {
         overflow: hidden;
@@ -738,9 +738,9 @@
     }
 }
 
-@media (max-width: 481px) {
+@media (min-width: 321px) and (max-width: 480px) {
     .container {
-        max-width: 450px;
+        max-width: 100%;
     }
     .header {
         overflow: hidden;
@@ -1029,6 +1029,9 @@
         }
     }
     .footer {
+        .container {
+            max-width: 100%;
+        }
         height: auto;
         &__ecva-1,
         &__ecva-2,
@@ -1088,9 +1091,9 @@
         }
     }
 }
-@media (max-width: 321px) {
+@media (max-width: 320px) {
     .container {
-        max-width: 290px
+        max-width: 100%
     }
     .header {
         .container {

@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -3090,9 +3090,9 @@ label span {
   color: #011a26;
 }
 
-@media (max-width: 1001px) {
+@media (min-width: 769px) and (max-width: 1000px) {
   .container {
-    max-width: 1000px;
+    max-width: 100%;
   }
   .header {
     overflow: hidden;
@@ -3415,9 +3415,9 @@ label span {
   }
 }
 
-@media (max-width: 769px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .container {
-    max-width: 700px;
+    max-width: 100%;
   }
   .header {
     overflow: hidden;
@@ -3822,9 +3822,9 @@ label span {
   }
 }
 
-@media (max-width: 481px) {
+@media (min-width: 321px) and (max-width: 480px) {
   .container {
-    max-width: 450px;
+    max-width: 100%;
   }
   .header {
     overflow: hidden;
@@ -4135,6 +4135,9 @@ label span {
   .footer {
     height: auto;
   }
+  .footer .container {
+    max-width: 100%;
+  }
   .footer__ecva-1, .footer__ecva-2, .footer__ecva-3, .footer__ecva-4 {
     display: none;
   }
@@ -4192,9 +4195,9 @@ label span {
   }
 }
 
-@media (max-width: 321px) {
+@media (max-width: 320px) {
   .container {
-    max-width: 290px;
+    max-width: 100%;
   }
   .header {
     padding: 26px 0 0 0;
