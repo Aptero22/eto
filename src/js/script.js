@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('.carousel__inner').slick({
         speed: 1200,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3000,
         adaptiveHeight: true,
         prevArrow: $(".slick-prev"),
