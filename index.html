@@ -386,15 +386,16 @@
     <section class="installations">
         <div class="container">
              <div class="installations__wrapper">
+                <div class="installations__wrapper-img">
+                    <img src="./src/img/line.png" alt="line" class="line">
+                </div>
                 <img class="resolution_desctop" src="./src/img/installations.png" alt="installations">
                 <img class="resolution_1000px" src="./src/img/installations_img1000.png" alt="installations_1000px">
                 <img class="resolution_768px" src="./src/img/installations_img768.png" alt="installations_768px">
                 <img class="resolution_480px" src="./src/img/installations_img480.png" alt="installations_480px">
                 <img class="resolution_320px" src="./src/img/installations_img320.png" alt="installations_320px">
                 <div class="installations__wrapper-info">
-                    <div class="installations__wrapper-img">
-                        <img src="./src/img/line.png" alt="line" class="line">
-                    </div>
+                    
                     <div class="installations__wrapper-block">
                         <h2 class="title">инсталляции</h2>
                         <div class="descr">
@@ -638,7 +639,7 @@
                     </div>
                 </div>
                 <div class="modal__button">
-                    <button class="modal__btn">оставить отзыв</button>
+                    <button class="modal__btn open_submit">оставить отзыв</button>
                 </div>
                 
             </form>
@@ -654,9 +655,33 @@
                 <input name="name" placeholder="Ваше имя" type="text">
                 <input name="phone" required placeholder="Ваш номер телефона*">
                 <div class="modal__button">
-                    <button class="modal__btn modal-btn">заказать звонок</button>
+                    <button class="modal__btn open_submit">заказать звонок</button>
                 </div>
             </form>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay_review_thanks">
+        <div class="modal modal_review_thanks modal-phone">
+            <div class="modal__top">
+                <div class="modal__top-subtitle">Спасибо!</div>
+            </div>
+            <div class="modal__descr">Ваш отзыв отправлен на модерацию.</div>
+            <div class="modal__button">
+                <button class="modal__btn open_submit">Продолжить</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay_consultation_thanks">
+        <div class="modal modal_consultation_thanks modal-phone">
+            <div class="modal__top">
+                <div class="modal__top-subtitle">Спасибо!</div>
+            </div>
+            <div class="modal__descr">Наш менеджер свяжется с Вами в ближайшее время!</div>
+            <div class="modal__button">
+                <button class="modal__btn open_submit">Продолжить</button>
+            </div>
         </div>
     </div>
 

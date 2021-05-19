@@ -1,7 +1,8 @@
+
 $(document).ready(function(){
     $('.carousel__inner').slick({
         speed: 1200,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000,
         adaptiveHeight: true,
         prevArrow: $(".slick-prev"),
@@ -24,10 +25,21 @@ $(document).ready(function(){
 
     const overlay_review = get('overlay_review');
     const overlay_consultation = get('overlay_consultation');
+    const overlay_review_thanks = get('overlay_review_thanks');
+    const overlay_consultation_thanks = get('overlay_consultation_thanks');
+
     const button_review = document.querySelectorAll('.open_review');
+    const button_review_sumbit = query('.overlay .modal_review .open_submit');
+    const button_review_thanks_submit = query('.overlay .modal_review_thanks .open_submit');
     const button_consultation = document.querySelectorAll('.open_consultation');
+    const button_consultation_submit = query('.overlay .modal_consultation .open_submit');
+    const button_consultation_thanks_submit = query('.overlay .modal_consultation_thanks .open_submit');
+
     const modal_review = query('.overlay .modal_review');
+    const modal_review_thanks = query('.overlay .modal_review_thanks');
     const modal_consultation = query('.overlay .modal_consultation');
+    const modal_consultation_thanks = query('.overlay .modal_consultation_thanks');
+    
 
     // Menu 320px
 
@@ -35,39 +47,76 @@ $(document).ready(function(){
     const hamburger = get('hamburger');
     const menu_overlay = get('menu_overlay');
 
-    menu_overlay.addEventListener('click', menu_overlayClick);
+    menu_overlay.addEventListener('click', function() {
+        menu_overlay.classList.remove('active');
+    });
     
     hamburger.addEventListener('click', function (event) {
             menu_overlay.classList.add('active');
     });
 
     menu.addEventListener('click', modalClick);
-
-    overlay_review.addEventListener('click', overlay_reviewClick);
-    overlay_consultation.addEventListener('click', overlay_consultationClick);
+//////
+    // overlay_submit.addEventListener('click', overlay_submitClick);
+    // button_submit.forEach(function (entry) {
+    //     entry.addEventListener('click', function (event) {
+    //         overlay_submit.classList.add('visible');
+    //     });
+    // });
+///////
     button_review.forEach(function (entry) { 
         entry.addEventListener('click', function (event) {
             overlay_review.classList.add('visible');
         });
     });
+    button_review_sumbit.addEventListener('click', function() {
+        overlay_review.classList.remove('visible');
+        overlay_review_thanks.classList.add('visible');
+    });
+    button_review_thanks_submit.addEventListener('click', function() {
+        overlay_review.classList.remove('visible');
+        overlay_review_thanks.classList.remove('visible');
+    });
+
+    overlay_review.addEventListener('click', function() {
+        overlay_review.classList.remove('visible');
+        overlay_review_thanks.classList.remove('visible');
+    });
+    overlay_review_thanks.addEventListener('click', function() {
+        overlay_review.classList.remove('visible');
+        overlay_review_thanks.classList.remove('visible');
+    });
+
+
+
     button_consultation.forEach(function (entry) {
         entry.addEventListener('click', function (event) {
             overlay_consultation.classList.add('visible');
         });
     });
-    modal_review.addEventListener('click', modalClick);
-    modal_consultation.addEventListener('click', modalClick);
-
-    function overlay_reviewClick() {
-        overlay_review.classList.remove('visible');
-    }
-    function menu_overlayClick() {
-        menu_overlay.classList.remove('active');
-    }
-
-    function overlay_consultationClick() {
+    button_consultation_submit.addEventListener('click', function() {
         overlay_consultation.classList.remove('visible');
-    }
+        overlay_consultation_thanks.classList.add('visible');
+    });
+    button_consultation_thanks_submit.addEventListener('click', function() {
+        overlay_consultation.classList.remove('visible');
+        overlay_consultation_thanks.classList.remove('visible');
+    });
+    overlay_consultation.addEventListener('click', function() {
+        overlay_consultation.classList.remove('visible');
+        overlay_consultation_thanks.classList.remove('visible');
+    });
+    overlay_consultation_thanks.addEventListener('click', function() {
+        overlay_consultation.classList.remove('visible');
+        overlay_consultation_thanks.classList.remove('visible');
+    });
+
+
+    modal_review.addEventListener('click', modalClick);
+    modal_review_thanks.addEventListener('click', modalClick);
+    modal_consultation.addEventListener('click', modalClick);
+    modal_consultation_thanks.addEventListener('click', modalClick);
+
 
     function modalClick(e) {
         e.preventDefault();
@@ -75,6 +124,18 @@ $(document).ready(function(){
         e.stopImmediatePropagation();
         return false;
     }
+
+    
+
+    // function overlay_submitClick() {
+    //     overlay_submit.classList.remove('visible');
+    // }
+
+    
+    
+
+    
+    
 
     $('.modal__top-close').on('click', function() {
         overlay_review.classList.remove('visible');

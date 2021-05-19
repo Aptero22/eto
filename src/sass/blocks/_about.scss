@@ -28,7 +28,7 @@
     }
     &__descr {
         margin-top: 48px;
-        width: 933px;
+        max-width: 933px;
         color: #ffffff;
         font-size: 20px;
         font-weight: 400;
@@ -41,7 +41,8 @@
     }
     &__wrapper-btn {
         display: flex;
-        margin-left: 1004px;
+        justify-content: flex-end;
+        padding-right: 133px;
         
     }
     &__btn {

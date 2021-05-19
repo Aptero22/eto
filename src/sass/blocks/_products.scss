@@ -10,7 +10,7 @@
     }
     &__descr {
         margin-top: 43px;
-        width: 941px;
+        max-width: 941px;
         color: #ffffff;
         font-size: 20px;
         font-weight: 400;
@@ -89,7 +89,6 @@
     }
     &__btn {
         margin-top: 28px;
-        margin-left: 917px;
         width: 230px;
         height: 40px;
         background-color: #0c2c56;
@@ -100,6 +99,11 @@
         &:hover, &:focus {
             background-color: #085086;
         }
+    }
+    &__wrapper-btn {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 133px;
     }
     a {
         color: #ffffff;

@@ -4,6 +4,7 @@
     &__wrapper {
         display: flex;
         justify-content: center;
+        position: relative;
     }
     &__wrapper-info {
         position: relative;
@@ -12,8 +13,8 @@
     }
     &__wrapper-img {
         position: absolute;
-        top: -19px;
-        left: 15px;
+        top: -20px;
+        left: 550px;
     }
     &__wrapper-block {
         margin: 40px 0 0 80px;

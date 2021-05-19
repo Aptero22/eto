@@ -1,3 +1,28 @@
+@media (min-width: 1000px) and (max-width: 1650px) {
+    .carousel {
+        &__two {
+            margin-left: 200px;
+        }
+    }
+}
+
+@media (min-width: 1002px) and (max-width: 1580px) {
+    .header {
+        &__abs-left,
+        &__abs-right {
+            display: none;
+        }
+    }
+    .home {
+        &__text {
+            margin-left: 200px;
+        }
+        &__quality {
+            margin-left: 260px;
+        }
+    }
+}
+
 @media (max-width: 1001px) {
     .container {
         max-width: 1000px ;
@@ -23,9 +48,11 @@
         }
         &__line-left {
             left: 45px;
+            top: 99px;
         }
         &__line-left_blue {
             left: 45px;
+            top: 99px;
         }
         &__low {
             justify-content: start;
@@ -54,6 +81,7 @@
         &__text {
             font-size: 54px;
             line-height: 40px;
+            margin-left: 114px;
             span {
                 font-size: 36px
             }
@@ -109,7 +137,7 @@
             margin-left: 0;
             display: flex;
             justify-content: flex-end;
-            margin-right: 88px;
+            padding-right: 88px;
         }
         &__img {
             top: -47px;
@@ -149,7 +177,7 @@
         &__wrapper-btn {
             display: flex;
             justify-content: flex-end;
-            margin-right: 88px;
+            padding-right: 88px;
         }
         &__wrapper-item {
             margin-top: 30px;
@@ -178,6 +206,7 @@
         }
         &__wrapper-item {
             margin-top: 25px;
+            justify-content: center;
         }
     }
     .installations {
@@ -203,6 +232,10 @@
         &__wrapper-btn {
             margin-left: auto;
             margin-top: 64px;
+        }
+        &__wrapper-img {
+            top: -20px;
+            left: 385px;
         }
     }
     .articles {
@@ -328,6 +361,32 @@
     }
 }
 
+@media (min-width: 901px) and (max-width: 1001px) {
+    .container {
+        max-width: 100%;
+    }
+    .header {
+        &__logo {
+            padding-left: 94px;
+        }
+        &__logo-wrapper {
+            padding-left: 40px;
+        }
+        &__menu {
+            padding-left: 15px;
+        }
+        &__menu_item {
+            margin-right: 15px;
+        }
+        &__line-left {
+            top: 107px;
+        }
+        &__line-left_blue {
+            top: 106px;
+        }
+    }
+}
+
 @media (min-width: 770px) and (max-width: 900px) {
     .container {
         max-width: 100%;
@@ -356,6 +415,30 @@
             }
             &_link {
                 font-size: 11px;
+            }
+        }
+    }
+}
+
+@media (min-width: 770px) and (max-width: 930px) {
+    .container {
+        max-width: 100%;
+    }
+    .articles {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 894px) {
+    .container {
+        max-width: 100%;
+    }
+    .home {
+        &__submenu li {
+            margin-right: 30px;
+            a {
+                font-size: 12px;
             }
         }
     }
@@ -452,7 +535,7 @@
             font-size: 50px;
             line-height: 41px;
             margin-top: 197px;
-            margin-left: 50px;
+            margin-left: 103px;
             span {
                 font-size: 34px;
             }
@@ -475,7 +558,7 @@
             padding: 25px 18px;
             width: 250px;
             height: 350px;
-            margin-left: 49px;
+            margin-left: 79px;
         }
         &__two_middle {
             margin-top: 38px;
@@ -510,14 +593,16 @@
             line-height: 30px;
             margin-top: 45px;
             width: 100%;
-            padding-right: 25px;
             box-sizing: border-box;
+            p {
+                padding-right: 70px;
+            }
 
         }
         &__wrapper-btn {
             justify-content: flex-end;
-            margin-right: 25px;
             margin-left: 0;
+            padding-right: 60px;
         }
         &__img {
             top: -71px;
@@ -559,7 +644,7 @@
         &__wrapper-btn {
             display: flex;
             justify-content: flex-end;
-            margin-right: 25px;
+            padding-right: 60px;
             a {
                 margin-left: 0;
             }
@@ -581,6 +666,9 @@
         }
         &__img img {
             min-height: 237px;
+        }
+        &__wrapper-item {
+            justify-content: flex-start;
         }
     }
     .installations {
@@ -606,6 +694,10 @@
             margin: 40px 0 0 46px;
             padding-right: 63px;
         }
+        &__wrapper-img {
+            top: -20px;
+            left: 270px;
+        }
         .descr {
             padding-bottom: 30px;
             p {
@@ -617,16 +709,16 @@
         }
     }
     .articles {
+        padding-left: 36px;
+        padding-right: 36px;
         .container {
             max-width: 100%;
         }
         padding-top: 66px;
         &__wrapper {
-            width: 100%;
             overflow: hidden;
         }
         &__wrapper-last {
-            width: 100%;
             height: 281px;
             overflow: hidden;
         }
@@ -652,7 +744,7 @@
             margin-top: 50px;
             justify-content: flex-end;
             margin-left: 0;
-            margin-right: -4px;
+            margin-right: 10px;
         }
     }
     .contacts {
@@ -673,9 +765,6 @@
         &__wrapper-img {
             left: 45px;
         }
-        // .contacts__768px {
-        //     margin-left: 61px;
-        // }
         &__wrapper-contact-deep {
             padding-top: 15px;
         }
@@ -782,6 +871,29 @@
         
     }
 }
+
+@media (min-width: 601px) and (max-width: 677px) {
+    .container {
+        max-width: 100%;
+    }
+    .home {
+        &__submenu li a {
+            font-size: 10px;
+        }
+    }
+}
+
+@media (min-width: 735px) and (max-width: 767px) {
+    .container {
+        max-width: 100%;
+    }
+    .footer {
+        &__menu {
+            padding-left: 25px;
+        }
+    }
+}
+
 @media (min-width: 700px) and (max-width: 734px) {
     .container {
         max-width: 100%;
@@ -789,6 +901,11 @@
     .header {
         &__menu_item {
             margin-right: 12px;
+        }
+    }
+    .footer {
+        &__menu {
+            padding-left: 25px;
         }
     }
 }
@@ -802,17 +919,31 @@
             padding-left: 10px;
         }
         &__menu_item {
-            margin-right: 10px;
+            margin-right: 9px;
         }
         &__line-left,
         &__line-left_blue {
-            top: 115px;
+            top: 103px;
         }
         &__abs-right {
             top: 61px;
         }
         &__phone {
             padding-right: 10px;
+        }
+        &__menu {
+            padding-left: 15px;
+        }
+        &__menu_link {
+            font-size: 9px;
+        }
+        &__logo {
+            padding-left: 45px;
+        }
+    }
+    .footer {
+        &__menu {
+            padding-left: 25px;
         }
     }
 }
@@ -839,22 +970,51 @@
         }
         &__line-left,
         &__line-left_blue {
-            top: 115px;
+            top: 103px;
         }
         &__abs-right {
             top: 61px;
         }
     }
+    .footer {
+        &__menu {
+            padding-left: 25px;
+        }
+    }
+}
+@media (min-width: 482px) and (max-width: 745px) {
+    .container {
+        max-width: 100%;
+    }
+    .contacts {
+        &__wrapper-contact-deep {
+            flex-direction: column;
+        }
+    }
 }
 
+@media (min-width: 482px) and (max-width: 685px) {
+    .container {
+        max-width: 100%;
+    }
+    .footer {
+        &__ecva-1,
+        &__ecva-2 {
+            display: none;
+        }
+    }
+}
 
-@media (max-width: 481px) {
+@media (max-width: 600px) {
     .container {
         max-width: 100%;
     }
     .header {
         overflow: hidden;
         padding: 26px 0 13px 0;
+        nav {
+            align-self: center;
+        }
         &__wrapper {
             margin-right: 11px;
         }
@@ -877,7 +1037,15 @@
             align-items: flex-start;
         }
         &__logo-wrapper {
-            margin-left: 14px;
+            margin-left: 0;
+            padding-left: 26px;
+            img {
+                &:first-child {
+                    margin-left: 0;
+                    margin-right: 5px;
+                }
+            }
+            
         }
         &__menu {
             padding-left: 14px;
@@ -894,14 +1062,15 @@
         }
         &__phone {
             padding-right: 0;
-        }   a {
-            font-size: 12px;
-        }
+            a {
+                font-size: 12px;
+            }
+        }   
         &__low {
             margin-top: 12px;
         }
         &__logo {
-            padding-left: 46px;
+            padding-left: 59px;
         }
         &__button {
             width: 134px;
@@ -926,9 +1095,10 @@
         }
         &__quality {
             font-size: 59px;
-            margin-left: 100px;
+            margin-left: 121px;
         }
         &__text {
+            margin-left: 72px;
             font-size: 38px;
             line-height: 31px;
             span {
@@ -963,7 +1133,7 @@
             font-size: 16px;
             line-height: 24px;
             p {
-                padding-right: 0;
+                padding-right: 25px;
             }
         }
         &__btn {
@@ -971,6 +1141,9 @@
         }
         &__wrapper {
             margin-left: 25px;
+        }
+        &__wrapper-btn {
+            padding-right: 25px;
         }
     }
     .products {
@@ -994,9 +1167,18 @@
                 padding-right: 5px;
             }
         }
+        &__wrapper {
+            margin-left: 25px;
+        }
+        &__wrapper-btn {
+            padding-right: 25px;
+        }
     }
     .services {
         overflow: hidden;
+        &__wrapper {
+            margin-left: 0;
+        }
         &__wrapper-item {
             flex-wrap: wrap;
             justify-content: center;
@@ -1013,15 +1195,18 @@
             line-height: 17px;
         }
         .title {
-            margin-left: 15px;
+            margin-left: 25px;
         }
         &__descr {
-            margin-left: 15px;
+            margin-left: 25px;
             font-size: 14px;
             line-height: 24px;
+            p {
+                padding-right: 20px;
+            }
         }
         &__wrapper-img {
-            left: -3px;
+            left: 8px;
         }
     }
     .installations {
@@ -1031,7 +1216,7 @@
         }
         .resolution_480px {
             display: block;
-            max-width: 482px;
+            max-width: 100%;
         }
         &__wrapper {
             flex-direction: column;
@@ -1049,10 +1234,12 @@
             margin-top: 40px;
         }
         &__wrapper-img {
-            top: -267px;
+            left: 0;
         }
     }
     .articles {
+        padding-left: 10px;
+        padding-right: 10px;
         .container {
             max-width: 100%;
         }
@@ -1090,6 +1277,9 @@
             bottom: -23px;
             left: 5px
         }
+        &__link {
+            margin-right: 0;
+        }
     }
     .reviews {
         overflow: hidden;
@@ -1101,7 +1291,6 @@
         &__wrapper {
             padding-bottom: 20px;
         }
-
         &__wrapper-comment {
             margin-left: 25px;
         }
@@ -1185,6 +1374,7 @@
         }
         &__menu {
             margin-top: 40px;
+            padding-left: 0;
         }
         &__ecva480_1 {
             display: block;
@@ -1209,6 +1399,16 @@
     }
 }
 
+@media (min-width: 481px) and (max-width: 530px) {
+    .container {
+        max-width: 100%;
+    }
+    .articles {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
 @media (min-width: 322px) and (max-width:435px) {
     .container {
         max-width: 100%;
@@ -1228,10 +1428,64 @@
         &__abs-right {
             top: 82px;
         }
+        &__logo-wrapper {
+            margin-left: 0;
+            padding-left: 14px;
+        }
+        &__logo {
+            padding-left: 47px;
+        }
+    }
+    .home {
+        &__text {
+            margin-left: 14px;
+        }
+        &__quality {
+            margin-left: 17px;
+        }
+    }
+    .products {
+        &__wrapper {
+            margin-left: 25px;
+        }
+    }
+    .services {
+        .title, &__descr {
+            margin-left: 0;
+        }
+        &__wrapper {
+            margin-left: 25px;
+        }
+        &__wrapper-img {
+            left: -15px;
+        }
+        &__item {
+            margin-right: 4px;
+        }
+    }
+    .articles {
+        padding: 66px 10px 0;
+        &__link {
+            padding-right: 5px;
+        }
+    }
+    .installations {
+        &__wrapper-img {
+            top: -20px;
+            left: 0;
+        }
+    }
+    .footer {
+        &__menu {
+            padding-left: 15px;
+        }
     }
 }
 
 @media (max-width: 321px)  {
+    body {
+        background: #011a26;
+    }
     .container {
         max-width: 100%;
     }
@@ -1243,10 +1497,12 @@
         nav,
         &__abs-left,
         &__abs-right,
-        &__btn,
+        &__btn {
+            display: none;
+        }
         &__line-left,
         &__line-left_blue {
-            display: none;
+            top: 128px;
         }
         &__button {
             margin-top: 16px;
@@ -1270,7 +1526,8 @@
             display: block;
         }
         &__logo-wrapper {
-            margin-left: 20px;
+            margin-left: 0;
+            padding-left: 20px;
         }
         &__phone {
             position: absolute;
@@ -1364,6 +1621,7 @@
         }
         &__wrapper-btn {
             margin-right: 0;
+            padding-right: 15px;
         }
         &__wrapper-img {
             top: 35px;
@@ -1409,9 +1667,11 @@
         }
         &__wrapper-item {
             margin-top: 10px;
+            padding-right: 15px;
         }
         &__wrapper-btn {
             margin-right: 0;
+            padding-right: 15px;
         }
     }
     .services {
@@ -1445,6 +1705,10 @@
         &__wrapper {
             margin-left: 15px;
         }
+        &__wrapper-item {
+            padding-right: 15px;
+            justify-content: center;
+        }
     }
     .installations {
         padding-top: 74px;
@@ -1460,7 +1724,7 @@
             height: auto;
         }
         &__wrapper-img {
-            top: -263px;
+            top: -14px;
             left: 0;
             img {
                 max-width: 333px;
@@ -1538,6 +1802,7 @@
             margin-top: 25px;
             flex-direction: column;
             align-items: flex-end;
+            padding-right: 15px;
         }
         &__wrapper-btn {
             margin-top: 20px;
@@ -1604,6 +1869,7 @@
     }
     .footer {
         overflow: hidden;
+        padding-top: 40px;
         .logo_1 {
             max-width: 45px;
             max-height: 13px;
@@ -1629,6 +1895,9 @@
             margin-top: 30px;
             flex-wrap: wrap;
         }
+        &__menu_item {
+            margin-right: 20px;
+        }
         &__ecva480_3 {
             left: 289px;
         }
@@ -1649,6 +1918,13 @@
         }
         &__input {
             margin-top: 7px;
+        }
+        &__captcha-input {
+            margin-top: -3px;
+        }
+        &_review_thanks,
+        &_consultation_thanks {
+            max-width: 260px;
         }
     }
 }
