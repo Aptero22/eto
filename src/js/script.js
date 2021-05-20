@@ -56,14 +56,7 @@ $(document).ready(function(){
     });
 
     menu.addEventListener('click', modalClick);
-//////
-    // overlay_submit.addEventListener('click', overlay_submitClick);
-    // button_submit.forEach(function (entry) {
-    //     entry.addEventListener('click', function (event) {
-    //         overlay_submit.classList.add('visible');
-    //     });
-    // });
-///////
+
     button_review.forEach(function (entry) { 
         entry.addEventListener('click', function (event) {
             overlay_review.classList.add('visible');
@@ -124,18 +117,6 @@ $(document).ready(function(){
         e.stopImmediatePropagation();
         return false;
     }
-
-    
-
-    // function overlay_submitClick() {
-    //     overlay_submit.classList.remove('visible');
-    // }
-
-    
-    
-
-    
-    
 
     $('.modal__top-close').on('click', function() {
         overlay_review.classList.remove('visible');

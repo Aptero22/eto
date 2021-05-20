@@ -24,6 +24,9 @@
 }
 
 @media (max-width: 1001px) {
+    body {
+        background: #011a26;
+    }
     .container {
         max-width: 1000px ;
     }
@@ -185,16 +188,23 @@
     }
     .services {
         &__wrapper {
-            margin-left: 85px;
+            margin-left: 0;
+        }
+        .title {
+            margin-left: 86px;
         }
         &__item {
             max-width: 259px;
             margin-right: 25px;
         }
         &__descr {
-            width: 100%;
+            width: auto;
             font-size: 20px;
             line-height: 36px;
+            margin-left: 86px;
+            p {
+                padding-right: 75px;
+            }
         }
         &__img img {
             min-height: 282px;
@@ -208,11 +218,15 @@
             margin-top: 25px;
             justify-content: center;
         }
+        &__wrapper-img {
+            left: 65px;
+        }
     }
     .installations {
         .container {
             max-width: 100%;
         }
+        padding-top: 50px;
         .resolution_1000px {
             display: block;
         }
@@ -387,6 +401,33 @@
     }
 }
 
+@media (min-width: 852px) and (max-width: 1001px) {
+    .container {
+        max-width: 100%;
+    }
+    .services {
+        &__item {
+            &:nth-child(3),
+            &:nth-child(6) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 770px) and (max-width: 826px) {
+    .container {
+        max-width: 100%;
+    }
+    .services {
+        &__item {
+            &:nth-child(even) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
 @media (min-width: 770px) and (max-width: 900px) {
     .container {
         max-width: 100%;
@@ -444,7 +485,12 @@
     }
 }
 
+
+
 @media (max-width: 769px) {
+    body {
+        background: #011a26;
+    }
     .container {
         max-width: 100%;
     }
@@ -653,22 +699,32 @@
     .services {
         overflow: hidden;
         &__wrapper {
-            margin-left: 34px;
+            margin-left: 0;
+        }
+        .title {
+            margin-left: 60px;
         }
         &__item {
             max-width: 211px;
             margin-right: 22px;
+            &:nth-child(even) {
+                margin-right: 0;
+            }
         }
         &__descr {
             width: 100%;
             font-size: 18px;
             line-height: 30px;
+            margin-left: 60px;
         }
         &__img img {
             min-height: 237px;
         }
         &__wrapper-item {
-            justify-content: flex-start;
+            justify-content: center;
+        }
+        &__wrapper-img {
+            left: 38px;
         }
     }
     .installations {
@@ -676,6 +732,7 @@
             max-width: 100%;
         }
         overflow: hidden;
+        padding-top: 50px;
         .resolution_1000px {
             display: none;
         }
@@ -872,6 +929,27 @@
     }
 }
 
+@media (min-width: 677px) and (max-width: 770px) {
+    .container {
+        max-width: 100%;
+    }
+    .services {
+        &__item {
+            margin-right: 10px;
+            &:nth-child(even) {
+                margin-right: 10px;
+            }
+            &:nth-child(3),
+            &:nth-child(6) {
+                margin-right: 0;
+            }
+        }
+        &__descr p {
+            padding-right: 62px;
+        }
+    }
+}
+
 @media (min-width: 601px) and (max-width: 677px) {
     .container {
         max-width: 100%;
@@ -1006,6 +1084,9 @@
 }
 
 @media (max-width: 600px) {
+    body {
+        background: #011a26;
+    }
     .container {
         max-width: 100%;
     }
@@ -1119,7 +1200,7 @@
             left: 10px;
         }
         .slick-next {
-            right: 30px;
+            right: 10px;
         }
         svg {
             width: 26px;
@@ -1191,7 +1272,7 @@
             }
         }
         &__item-descr {
-            font-size: 11px;
+            font-size: 13px;
             line-height: 17px;
         }
         .title {
@@ -1211,6 +1292,7 @@
     }
     .installations {
         overflow: hidden;
+        padding-top: 50px;
         .resolution_768px {
             display: none;
         }
@@ -1482,6 +1564,99 @@
     }
 }
 
+@media (min-width: 322px) and (max-width: 434px) {
+    .container {
+        max-width: 100%;
+    }
+    .services {
+        &__wrapper {
+            margin-left: 0;
+        }
+        .title {
+            margin-left: 25px;
+        }
+        &__descr {
+            margin-left: 25px;
+        }
+        &__wrapper-img {
+            left: 5px;
+        }
+        &__descr p {
+            padding-right: 25px;
+        }
+    }
+}
+
+@media (min-width: 322px) and (max-width: 398px) {
+    .container {
+        max-width: 100%;
+    }
+    .products {
+        &__item {
+            margin-right: 10px;
+            &:last-child {
+                margin-right: 10px;
+            }
+            &-img {
+                img {
+                        max-width: 131px;
+                        min-width: auto;
+                        max-height: 140px;
+                }
+            }
+        }
+        &__wrapper-item {
+            padding-right: 15px;
+        }
+    }
+}
+
+@media (min-width: 322px) and (max-width: 388px) {
+    .container {
+        max-width: 100%;
+    }
+    .reviews {
+        &__link a {
+            font-size: 14px;
+        }
+        &__btn {
+            margin-left: 20px;
+            width: 170px;
+            font-size: 16px;
+        }
+    }
+}
+
+@media (min-width: 322px) and (max-width: 380px) {
+    .container {
+        max-width: 100%;
+    }
+    .contacts {
+        &__wrapper-contact {
+            padding-bottom: 0;
+        }
+        &__wrapper-button {
+            padding-left: 0;
+            margin-right: 0;
+        }
+        &__button {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 322px) and (max-width: 450px) {
+    .container {
+        max-width: 100%;
+    }
+    .carousel {
+        &__two {
+            margin: 0 auto;
+            margin-top: 90px;
+        }
+    }
+}
+
 @media (max-width: 321px)  {
     body {
         background: #011a26;
@@ -1693,6 +1868,7 @@
         &__item {
             margin-right: 0;
             max-width: 204px;
+            margin-bottom: 30px;
         }
         &__item-subtitle {
             font-size: 14px;
@@ -1709,9 +1885,12 @@
             padding-right: 15px;
             justify-content: center;
         }
+        &__item-descr {
+            font-size: 13px;
+        }
     }
     .installations {
-        padding-top: 74px;
+        padding-top: 20px;
         .container {
             max-width: 100%;
         }

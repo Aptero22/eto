@@ -1871,8 +1871,8 @@ label span {
   line-height: 0;
   position: absolute;
   top: 50%;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 46px;
   padding: 0;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
@@ -3163,6 +3163,9 @@ label span {
 }
 
 @media (max-width: 1001px) {
+  body {
+    background: #011a26;
+  }
   .container {
     max-width: 1000px;
   }
@@ -3331,16 +3334,23 @@ label span {
     margin-top: 30px;
   }
   .services__wrapper {
-    margin-left: 85px;
+    margin-left: 0;
+  }
+  .services .title {
+    margin-left: 86px;
   }
   .services__item {
     max-width: 259px;
     margin-right: 25px;
   }
   .services__descr {
-    width: 100%;
+    width: auto;
     font-size: 20px;
     line-height: 36px;
+    margin-left: 86px;
+  }
+  .services__descr p {
+    padding-right: 75px;
   }
   .services__img img {
     min-height: 282px;
@@ -3355,6 +3365,12 @@ label span {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .services__wrapper-img {
+    left: 65px;
+  }
+  .installations {
+    padding-top: 50px;
   }
   .installations .container {
     max-width: 100%;
@@ -3528,6 +3544,24 @@ label span {
   }
 }
 
+@media (min-width: 852px) and (max-width: 1001px) {
+  .container {
+    max-width: 100%;
+  }
+  .services__item:nth-child(3), .services__item:nth-child(6) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 770px) and (max-width: 826px) {
+  .container {
+    max-width: 100%;
+  }
+  .services__item:nth-child(even) {
+    margin-right: 0;
+  }
+}
+
 @media (min-width: 770px) and (max-width: 900px) {
   .container {
     max-width: 100%;
@@ -3582,6 +3616,9 @@ label span {
 }
 
 @media (max-width: 769px) {
+  body {
+    background: #011a26;
+  }
   .container {
     max-width: 100%;
   }
@@ -3799,27 +3836,38 @@ label span {
     overflow: hidden;
   }
   .services__wrapper {
-    margin-left: 34px;
+    margin-left: 0;
+  }
+  .services .title {
+    margin-left: 60px;
   }
   .services__item {
     max-width: 211px;
     margin-right: 22px;
   }
+  .services__item:nth-child(even) {
+    margin-right: 0;
+  }
   .services__descr {
     width: 100%;
     font-size: 18px;
     line-height: 30px;
+    margin-left: 60px;
   }
   .services__img img {
     min-height: 237px;
   }
   .services__wrapper-item {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .services__wrapper-img {
+    left: 38px;
   }
   .installations {
     overflow: hidden;
+    padding-top: 50px;
   }
   .installations .container {
     max-width: 100%;
@@ -4007,6 +4055,24 @@ label span {
   }
 }
 
+@media (min-width: 677px) and (max-width: 770px) {
+  .container {
+    max-width: 100%;
+  }
+  .services__item {
+    margin-right: 10px;
+  }
+  .services__item:nth-child(even) {
+    margin-right: 10px;
+  }
+  .services__item:nth-child(3), .services__item:nth-child(6) {
+    margin-right: 0;
+  }
+  .services__descr p {
+    padding-right: 62px;
+  }
+}
+
 @media (min-width: 601px) and (max-width: 677px) {
   .container {
     max-width: 100%;
@@ -4122,6 +4188,9 @@ label span {
 }
 
 @media (max-width: 600px) {
+  body {
+    background: #011a26;
+  }
   .container {
     max-width: 100%;
   }
@@ -4243,7 +4312,7 @@ label span {
     left: 10px;
   }
   .carousel .slick-next {
-    right: 30px;
+    right: 10px;
   }
   .carousel svg {
     width: 26px;
@@ -4319,7 +4388,7 @@ label span {
     margin-right: 0px;
   }
   .services__item-descr {
-    font-size: 11px;
+    font-size: 13px;
     line-height: 17px;
   }
   .services .title {
@@ -4338,6 +4407,7 @@ label span {
   }
   .installations {
     overflow: hidden;
+    padding-top: 50px;
   }
   .installations .resolution_768px {
     display: none;
@@ -4607,6 +4677,87 @@ label span {
   }
 }
 
+@media (min-width: 322px) and (max-width: 434px) {
+  .container {
+    max-width: 100%;
+  }
+  .services__wrapper {
+    margin-left: 0;
+  }
+  .services .title {
+    margin-left: 25px;
+  }
+  .services__descr {
+    margin-left: 25px;
+  }
+  .services__wrapper-img {
+    left: 5px;
+  }
+  .services__descr p {
+    padding-right: 25px;
+  }
+}
+
+@media (min-width: 322px) and (max-width: 398px) {
+  .container {
+    max-width: 100%;
+  }
+  .products__item {
+    margin-right: 10px;
+  }
+  .products__item:last-child {
+    margin-right: 10px;
+  }
+  .products__item-img img {
+    max-width: 131px;
+    min-width: auto;
+    max-height: 140px;
+  }
+  .products__wrapper-item {
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 322px) and (max-width: 388px) {
+  .container {
+    max-width: 100%;
+  }
+  .reviews__link a {
+    font-size: 14px;
+  }
+  .reviews__btn {
+    margin-left: 20px;
+    width: 170px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 322px) and (max-width: 380px) {
+  .container {
+    max-width: 100%;
+  }
+  .contacts__wrapper-contact {
+    padding-bottom: 0;
+  }
+  .contacts__wrapper-button {
+    padding-left: 0;
+    margin-right: 0;
+  }
+  .contacts__button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 322px) and (max-width: 450px) {
+  .container {
+    max-width: 100%;
+  }
+  .carousel__two {
+    margin: 0 auto;
+    margin-top: 90px;
+  }
+}
+
 @media (max-width: 321px) {
   body {
     background: #011a26;
@@ -4808,6 +4959,7 @@ label span {
   .services__item {
     margin-right: 0;
     max-width: 204px;
+    margin-bottom: 30px;
   }
   .services__item-subtitle {
     font-size: 14px;
@@ -4826,8 +4978,11 @@ label span {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .services__item-descr {
+    font-size: 13px;
+  }
   .installations {
-    padding-top: 74px;
+    padding-top: 20px;
   }
   .installations .container {
     max-width: 100%;
