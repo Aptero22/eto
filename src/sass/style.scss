@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background: #001321;
+    overflow-x: hidden;
 }
 * {
     font-family: Roboto, sans-serif;
@@ -47,3 +48,4 @@ p {
 @import 'blocks/slider2';
 @import 'blocks/menu';
 @import 'blocks/media';
+@import 'blocks/mediaAbout';
