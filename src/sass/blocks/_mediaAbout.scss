@@ -23,6 +23,7 @@
     }
     .home {
         &__abs_about {
+            display: block;
             position: absolute;
             right: 0;
         }
@@ -359,10 +360,13 @@
             left: -15px;
         }
         &__about {
-            padding-left: 0;
+            padding-left: 14px;
         }
         &__abs-right-about {
             right: -117px;
+        }
+        &__about_item {
+            margin-right: 11px;
         }
     }
     .carousel {
