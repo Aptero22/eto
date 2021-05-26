@@ -4,7 +4,7 @@
         overflow: hidden;
     }
     &__second {
-        padding-top: 62px;
+        padding-top: 16px;
         padding-bottom: 258px;
     }
     .title {
@@ -12,6 +12,12 @@
         &_content {
             text-align: left;
         }
+    }
+    .title_content {
+        margin-top: 40px;
+    }
+    &__img {
+        margin-left: -15px;
     }
     &__wrapper-btn {
         display: flex;

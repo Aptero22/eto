@@ -2,14 +2,17 @@
     overflow: hidden;
     padding-top: 52px;
     &__second {
-        padding-top: 62px;
+        padding-top: 16px;
         padding-bottom: 181px;
     }
     .reviews_768px {
         display: none;
     }
-    .title {
-        margin-left: 160px;
+    .title_content {
+        margin-top: 40px;
+    }
+    .reviews__info_top {
+        padding-top: 0;
     }
     &__wrapper {
         background-color: #0c2c56;
@@ -114,9 +117,10 @@
         text-align: left;
     }
     &__info {
-        padding-left: 160px;
+        margin: 0 auto;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         padding-bottom: 41px;
         padding-top: 35px;
     }
@@ -135,7 +139,6 @@
         }
     }
     &__wrapper {
-        padding-left: 160px;
         padding-bottom: 36px;
     }
 }

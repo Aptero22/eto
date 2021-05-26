@@ -2,7 +2,10 @@
     padding-top: 90px;
     &__second {
         padding-bottom: 194px;
-        padding-top: 62px;
+        padding-top: 16px;
+    }
+    .title_content {
+        margin-top: 40px;
     }
     &__services {
         padding-top: 62px;
@@ -38,6 +41,7 @@
     &__text {
         font-size: 18px;
         line-height: 30px;
+        margin-top: 0;
     }
     &__wrapper-btn {
         display: flex;

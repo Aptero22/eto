@@ -1,11 +1,14 @@
 @media (max-width: 1001px) {
+    .wrapper__content_middle {
+        .about__descr p {
+            padding-right: 0;
+        }
+    }
     .about {
         &__installations {
-            padding-top: 16px;
-            padding-bottom: 182px;
+            padding: 16px 85px 187px;
         }
         &__installation {
-            margin-right: 86px;
             width: auto;
             padding: 20px 16px 22px 16px;
         }
@@ -17,6 +20,9 @@
             top: auto;
             bottom: -24px;
         }
+        &__descr p {
+            padding-right: 101px;
+        }
     }
     .title_inst {
         font-size: 22px;
@@ -24,20 +30,26 @@
 }
 
 @media (max-width: 769px) {
-    .about {
-        &__installation {
-            margin-right: 60px;
+    .wrapper__content_middle {
+        .about__descr p {
+            padding-right: 0;
         }
+    }
+    .about {
+        &__descr p {
+            padding-right: 70px;
+        }
+        &__installations {
+            padding: 15px 60px 155px;
+        }
+        
     }
 }
 
 @media (max-width: 600px) {
     .about {
         &__installations {
-            padding-bottom: 117px;
-        }
-        &__installation {
-            margin-right: 25px;
+            padding: 10px 25px 100px;
         }
         &__list {
             padding-right: 25px;
@@ -63,7 +75,6 @@
             padding-bottom: 46px;
         }
         &__installation {
-            margin-right: 15px;
             padding: 19px 10px 5px 10px;
             &-subtitle {
                 margin-top: 12px;
