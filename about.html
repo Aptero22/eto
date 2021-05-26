@@ -94,17 +94,19 @@
     </section>
     <section class="about about__second">
         <div class="container">
-            <div class="breadcrumb__wrapper">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
-                    <li class="breadcrumb-item active">О нас</li>
-                </ol> 
-            </div>
-            <div class="about__wrapper about__wrapper_second">
-                <h2 class="title">О НАС</h2>
-                <div class="about__wrapper-img">
-                    <img src="./src/img/line.png" alt="line" class="line">
+            <div class="wrapper__content_top">
+                    <div class="breadcrumb__wrapper">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                        <li class="breadcrumb-item active">О нас</li>
+                    </ol> 
                 </div>
+                <h2 class="title title_content">О нас</h2>
+                <div class="articles__img ">
+                    <img src="./src/img/line.png" alt="line">
+                </div>
+            </div>
+            <div class="about__wrapper about__wrapper_second wrapper__content_middle">
                 <div class="about__descr about__text">
                     <p>
                         Наша компания <span>Экспериментальное Творческое Объединение (ЭТО)</span> была создана в 1988 году группой единомышленников — бывших и действующих музыкантов.
@@ -240,7 +242,7 @@
                     </div>
                 </div>
                 <div class="modal__button">
-                    <button class="modal__btn open_submit">оставить отзыв</button>
+                    <button type="submit" class="modal__btn open_submit">оставить отзыв</button>
                 </div>
                 
             </form>
@@ -256,7 +258,7 @@
                 <input name="name" placeholder="Ваше имя" type="text">
                 <input name="phone" required placeholder="Ваш номер телефона*">
                 <div class="modal__button">
-                    <button class="modal__btn open_submit">заказать звонок</button>
+                    <button type="submit" class="modal__btn open_submit">заказать звонок</button>
                 </div>
             </form>
         </div>

@@ -29,12 +29,14 @@
         }
     }
     .about {
-        .breadcrumb__wrapper {
-            margin-left: 86px;
-        }
         &__second {
-            padding-top: 12px;  
-            padding-bottom: 124px;
+            padding: 12px 85px 124px;
+        }
+        &__wrapper_second {
+            margin-left: 0;
+        }
+        &__text {
+            margin-top: 15px;
         }
     }
     .footer {
@@ -192,8 +194,8 @@
         }
     }
     .about {
-        .breadcrumb__wrapper {
-            margin-left: 60px;
+        &__second {
+            padding: 15px 60px 155px;
         }
     }
     .footer {
@@ -375,8 +377,8 @@
         }
     }
     .about {
-        .breadcrumb__wrapper {
-            margin-left: 25px;
+        &__second {
+            padding: 10px 25px 100px;
         }
     }
     .footer {
@@ -473,12 +475,10 @@
         }
     }
     .about {
-        .breadcrumb__wrapper {
-            margin-left: 15px;
-        }
         &__second {
             padding-top: 12px;
             padding-bottom: 64px;
+            padding: 4px 15px 50px;
         }
     }
     .modal {
