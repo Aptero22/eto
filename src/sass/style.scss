@@ -28,6 +28,21 @@ p {
     height: auto;
 }
 
+.wrapper__content_top {
+    max-width: 955px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+@media (max-width: 1001px) {
+    .wrapper__content_top {
+        max-width: 828px;
+    }
+}
+
+
+
 @import 'blocks/header';
 @import 'blocks/home';
 @import 'blocks/title';
@@ -51,3 +66,4 @@ p {
 @import 'blocks/mediaAbout';
 @import 'blocks/mediaInstallations';
 @import 'blocks/mediaArticles';
+@import 'blocks/mediaReviews';

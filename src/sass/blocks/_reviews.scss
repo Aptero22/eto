@@ -34,11 +34,7 @@
         left: 145px;
     }
     &__wrapper-comment {
-        // position: absolute;
-        // top: 0;
-        // left: 330px;
         margin-left: 330px;
-        // z-index: 2000;
         position: relative;
     }
     &__subtitle {
@@ -128,9 +124,7 @@
         padding-left: 174px;
     }
     &__img {
-        left: 455px;
-        top: 280px;
-        position: absolute;
+        margin-left: 145px;
     }
 }
 

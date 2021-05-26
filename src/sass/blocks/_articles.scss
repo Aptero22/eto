@@ -1,14 +1,16 @@
 .articles {
     padding-top: 117px;
+    .container {
+        overflow: hidden;
+    }
     &__second {
         padding-top: 62px;
         padding-bottom: 258px;
     }
     .title {
         text-align: center;
-        &_art {
+        &_content {
             text-align: left;
-            padding-left: 162px;
         }
     }
     &__wrapper-btn {
@@ -24,6 +26,7 @@
         margin: auto;
         margin-top: 56px;
         pointer-events: none;
+        overflow: visible;
         &:hover {
             background: #0c2c56;
         }
@@ -81,6 +84,7 @@
         margin: auto;
         margin-top: 35px;
         pointer-events: none;
+        overflow: visible;
         &:hover {
             background: #0c2c56;
         }

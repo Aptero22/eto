@@ -1,21 +1,11 @@
 @media (max-width: 1001px) {
     .articles {
-        .breadcrumb__wrapper {
-            margin-left: 85px;
-        }
         .container {
             &__second {
                 max-width: 100%;
                 overflow: hidden;
             }
 
-        }
-        .title_art {
-            padding-left: 0;
-            margin-left: 85px;
-        }
-        &__img {
-            margin-left: 65px;
         }
         &__second {
             padding-top: 16px;
@@ -29,8 +19,7 @@
             line-height: 30px;
             padding-top: 0;
         }
-        &__wrapper_second,
-        &__wrapper-last {
+        &__wrapper_second {
             width: auto;
             margin-left: 85px;
             margin-right: 85px;
@@ -44,14 +33,7 @@
 
 @media (max-width: 769px) {
     .articles {
-        .breadcrumb__wrapper,
-        .title_art,
-        &__description {
-            margin-left: 60px;
-            padding-right: 45px;    
-        }
-        &__wrapper_second,
-        &__wrapper-last {
+        &__wrapper_second {
             margin-left: 60px;
             margin-right: 60px;
             box-sizing: border-box;
@@ -68,25 +50,17 @@
         &__second {
             padding-bottom: 155px;   
         }
-        &__img {
-            margin-left: 40px;
-        }
     }
 }
 
 @media (max-width: 600px) {
     .articles {
-        .breadcrumb__wrapper,
-        .title_art {
-            margin-left: 25px;
-        }
         &__description {
             margin-left: 25px;
             font-size: 16px;
             line-height: 24px;
         }
-        &__wrapper_second,
-        &__wrapper-last {
+        &__wrapper_second {
             margin-left: 25px;
             margin-right: 25px;
             box-sizing: border-box;
@@ -109,18 +83,11 @@
         &__pagination li a {
             padding: 4px 3px;
         }
-        &__img {
-            margin-left: 10px;
-        }
     }
 }
 
 @media (max-width: 321px) {
     .articles {
-        .breadcrumb__wrapper,
-        .title_art {
-            margin-left: 15px;
-        }
         &__description {
             margin-left: 15px;
             font-size: 12px;
@@ -130,8 +97,7 @@
             padding-top: 4px;
             padding-bottom: 50px; 
         }
-        &__wrapper_second,
-        &__wrapper-last {
+        &__wrapper_second {
             margin-left: 15px;
             margin-right: 15px;
             overflow: visible;
@@ -146,9 +112,6 @@
         }
         &__subtitle {
             font-size: 16px;
-        }
-        &__img {
-            margin-left: 0;
         }
     }
 }

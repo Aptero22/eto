@@ -768,16 +768,12 @@
     .articles {
         padding-left: 36px;
         padding-right: 36px;
+        padding-top: 66px;
         .container {
             max-width: 100%;
         }
-        padding-top: 66px;
-        &__wrapper {
-            overflow: hidden;
-        }
         &__wrapper-last {
-            height: 281px;
-            overflow: hidden;
+            height: auto;
         }
         &__subtitle {
             margin-top: 35px;
