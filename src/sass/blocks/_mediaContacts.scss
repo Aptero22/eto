@@ -1,0 +1,18 @@
+@media (max-width: 1001px) {
+    .wrapper__content_top_padding {
+        padding: 0 85px;
+    }
+    .contacts {
+        &__wrapper-contacts-deep {
+            flex-wrap: wrap;
+            margin-left: 0;
+            
+        }
+        &__wrapper-second {
+            background-color: #011a26;
+        }
+        &__button_second {
+            margin-top: 25px;
+        }
+    }
+}

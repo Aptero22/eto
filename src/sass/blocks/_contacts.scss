@@ -3,7 +3,10 @@
     position: relative;
     overflow: hidden;
     &__second {
-        padding-top: 62px;
+        padding-top: 16px;
+    }
+    .title_content {
+        margin-top: 40px;
     }
     &__wrapper-contact {
         width: 100%;
@@ -55,12 +58,15 @@
         display: flex;
         justify-content: center;
         padding-top: 33px;
-        margin-left: 20px;
+        margin-left: 0;
         
+    }
+    &__wrapper-contacts-deep {
+        justify-content: flex-start;
     }
     &__wrapper-item {
         width: auto;
-        padding-right: 52px;
+        padding-right: 45px;
         &:last-child {
             width: 112px;
             padding-right: 40px;
@@ -109,10 +115,8 @@
         top: 170px;
     }
     &__wrapper-img-low {
-        position: absolute;
-        left: 457px;
-        top: 362px;
-    }
+        margin-left: -15px;
+    }  
     &__map-right {
         display: none;
     }

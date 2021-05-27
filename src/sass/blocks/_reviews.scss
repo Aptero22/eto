@@ -1,6 +1,19 @@
+.comments {
+    .comment {
+        padding: 0 20px;
+
+        .container {
+            max-width: 955px;
+        }
+    }
+}
+
 .reviews {
     overflow: hidden;
     padding-top: 52px;
+    .title {
+        margin-left: 160px;
+    }
     &__second {
         padding-top: 16px;
         padding-bottom: 181px;
@@ -10,6 +23,7 @@
     }
     .title_content {
         margin-top: 40px;
+        margin-left: 0;
     }
     .reviews__info_top {
         padding-top: 0;
@@ -69,7 +83,6 @@
     &__wrapper-second {
         display: flex;
         justify-content: flex-end;
-        padding-right: 175px;
         padding-top: 24px;
     }
     &__date {

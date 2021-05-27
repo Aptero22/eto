@@ -11,9 +11,6 @@
         padding: 0 20px;
     }
     .reviews {
-        .title {
-            margin-left: 0;
-        }
         &__second {
             padding-top: 16px;
         }
@@ -27,8 +24,9 @@
         &__btn-info {
             margin-left: 0;
         }
+        &__text-second,
         &__wrapper-second {
-            padding-right: 85px;
+            padding-right: 0;
         }
     }
     

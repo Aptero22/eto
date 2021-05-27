@@ -1116,9 +1116,21 @@ p {
   fill: #095087;
 }
 
+.comments .comment {
+  padding: 0 20px;
+}
+
+.comments .comment .container {
+  max-width: 955px;
+}
+
 .reviews {
   overflow: hidden;
   padding-top: 52px;
+}
+
+.reviews .title {
+  margin-left: 160px;
 }
 
 .reviews__second {
@@ -1132,6 +1144,7 @@ p {
 
 .reviews .title_content {
   margin-top: 40px;
+  margin-left: 0;
 }
 
 .reviews .reviews__info_top {
@@ -1207,7 +1220,6 @@ p {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-right: 175px;
   padding-top: 24px;
 }
 
@@ -1296,7 +1308,11 @@ p {
 }
 
 .contacts__second {
-  padding-top: 62px;
+  padding-top: 16px;
+}
+
+.contacts .title_content {
+  margin-top: 40px;
 }
 
 .contacts__wrapper-contact {
@@ -1364,12 +1380,18 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 33px;
-  margin-left: 20px;
+  margin-left: 0;
+}
+
+.contacts__wrapper-contacts-deep {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .contacts__wrapper-item {
   width: auto;
-  padding-right: 52px;
+  padding-right: 45px;
 }
 
 .contacts__wrapper-item:last-child {
@@ -1427,9 +1449,7 @@ p {
 }
 
 .contacts__wrapper-img-low {
-  position: absolute;
-  left: 457px;
-  top: 362px;
+  margin-left: -15px;
 }
 
 .contacts__map-right {
@@ -6000,9 +6020,6 @@ label span {
   .container__padding {
     padding: 0 20px;
   }
-  .reviews .title {
-    margin-left: 0;
-  }
   .reviews__second {
     padding-top: 16px;
   }
@@ -6016,8 +6033,8 @@ label span {
   .reviews__btn-info {
     margin-left: 0;
   }
-  .reviews__wrapper-second {
-    padding-right: 85px;
+  .reviews__text-second, .reviews__wrapper-second {
+    padding-right: 0;
   }
 }
 
@@ -6091,6 +6108,10 @@ label span {
   }
 }
 
+.wrapper__content_top .title_content {
+  margin-left: 0;
+}
+
 .wrapper__content_top,
 .wrapper__content_middle,
 .wrapper__content_bottom {
@@ -6135,5 +6156,22 @@ label span {
   .wrapper__content_middle,
   .wrapper__content_bottom {
     max-width: 291px;
+  }
+}
+
+@media (max-width: 1001px) {
+  .wrapper__content_top_padding {
+    padding: 0 85px;
+  }
+  .contacts__wrapper-contacts-deep {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 0;
+  }
+  .contacts__wrapper-second {
+    background-color: #011a26;
+  }
+  .contacts__button_second {
+    margin-top: 25px;
   }
 }
