@@ -10,9 +10,103 @@
         }
         &__wrapper-second {
             background-color: #011a26;
+            margin: 0;
+            padding: 0 85px;
+        }
+        &__wrapper_padding {
+            margin: 0;
+            padding: 0 85px;
+            margin-top: 45px;
         }
         &__button_second {
             margin-top: 25px;
         }
     }
+}
+
+@media (max-width: 769px) {
+    .wrapper__content_top_padding {
+        padding: 0 60px;
+    }
+    .contacts {
+        &__wrapper-second {
+            padding: 0 60px;
+            max-width: 730px;
+        }
+        &__wrapper_padding {
+            margin-top: 45px;
+            padding: 0 60px;
+        }
+        &__wrapper-item-second {
+            padding-right: 0;
+        }
+    }
+    
+
+}
+
+@media (min-width: 601px) and (max-width: 746px) {
+    .contacts {
+        &__wrapper-contacts-deep {
+            flex-direction: row;
+        }
+        &__wrapper-item-second {
+            width: 40%;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper__content_top_padding {
+        padding: 0 25px;
+        margin-left: 0;
+    }
+    .contacts {
+        &__wrapper-second {
+            padding: 0 25px;
+            max-width: 330px;
+        }
+        &__wrapper_padding {
+            margin-top: 45px;
+            padding: 0 25px;
+        }
+        &__button_second {
+            margin-top: 10px;
+        }
+        &__wrapper-contacts-deep {
+            flex-direction: inherit;
+            padding-top: 0;
+        }
+        &__button_second {
+            width: 230px;
+            font-size: 18px;
+            padding: 10px 0 10px 0;
+        }
+    }
+}
+
+@media (max-width: 321px) {
+    .wrapper__content_top_padding {
+        padding: 0 15px;
+    }
+    .contacts {
+        &__second {
+            padding-top: 5px;
+        }
+        &__wrapper-second {
+            padding: 0 15px;
+            max-width: 100%;
+        }
+        &__wrapper_padding {
+            margin-top: 45px;
+            padding: 0 15px;
+        }
+        &__wrapper-contacts-deep {
+            justify-content: flex-start;
+        }
+        &__wrapper-item-second {
+            padding-right: 35px;
+        }
+    }
+
 }
