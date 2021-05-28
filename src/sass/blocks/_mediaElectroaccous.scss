@@ -1,0 +1,97 @@
+@media (max-width: 1001px) {
+    .shop {
+        &__card_product {
+            margin-top: 40px;
+        }
+        &__card_electroacoustics {
+            padding-right: 70px;
+        }
+    }
+}
+
+@media (min-width: 770px) and (max-width: 860px) {
+    .shop {
+        &__card_product {
+            align-items: flex-end;
+            flex-direction: column-reverse;
+        }
+        &__card_description {
+            padding-right: 0;
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .shop {
+        &__card_product {
+            padding: 35px 38px 57px 38px;
+        }
+        &__card_parameters-second {
+            font-size: 14px;
+        }
+    }
+    .wrapper__content_low {
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 750px) {
+    .shop {
+        .shop__card_product {
+            align-items: flex-end;
+            flex-direction: column-reverse;
+        }
+        
+    }
+}
+
+@media (max-width: 600px) {
+    .shop {
+        &__card_electroacoustics {
+            padding: 0;
+        }
+        &__card_product {
+            padding: 35px 20px 57px 20px;
+            flex-direction: column-reverse;
+        }
+        &__card_buttons-second {
+            justify-content: flex-end;
+        }
+        &__card_subtitle-second {
+            margin-top: 35px;   
+        }
+    }
+}
+
+@media (min-width: 322px) and (max-width: 370px) {
+    .shop {
+        &__card_parameters {
+            font-size: 11px;
+        }
+        &__card_product {
+            padding: 35px 5px 57px 5px;
+        }
+    }
+}
+
+@media (max-width: 321px) {
+    .shop {
+        
+        &__card_ruble {
+            font-size: 40px;
+        }
+        &__card_subtitle-second {
+            font-size: 14px;
+        }
+        &__card_main-second {
+            font-size: 14px;
+            margin-top: 15px;
+        }
+        &__card_parameters-second {
+            font-size: 10px;
+        }
+        &__card_product {
+            padding: 35px 10px 25px 10px;
+        }
+    }
+}

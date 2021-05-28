@@ -1,0 +1,29 @@
+@media (min-width: 401px) and (max-width: 475px) {
+    .shop {
+        &__card_description-second {
+            padding: 25px 15px 35px 15px;
+        }
+        &__card_parameters-second {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (min-width: 371px) and (max-width: 400px) {
+    .shop {
+        &__card_parameters-second {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (min-width: 322px) and (max-width: 370px) {
+    .shop {
+        &__card_parameters-second {
+            font-size: 10px;
+        }
+        &__card_description {
+            padding: 25px 5px 35px 5px;
+        }
+    }
+}

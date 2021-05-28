@@ -1,0 +1,48 @@
+@media (max-width: 769px) {
+    .shop {
+        &__card_patent {
+            font-size: 16px;
+            margin-top: 40px;
+        }
+        &__card_wrapper-patent {
+            padding: 35px 36px 40px 36px;
+        }
+        &__card_description-patent {
+            padding-right: 30px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .shop {
+        &__card_buttons-patent {
+            justify-content: flex-end;
+        }
+        &__card_patent {
+            font-size: 14px;
+            line-height: 28px;
+            
+        }
+        &__card_wrapper-patent {
+            padding: 30px 20px 30px 20px;
+        }
+    }
+}
+
+@media (max-width: 321px) {
+    .title {
+        &_patent {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+    .shop {
+        &__card_wrapper-patent {
+            padding: 30px 15px 20px 15px;
+        }
+        &__card_patent {
+            font-size: 12px;
+            line-height: 24px;
+        }
+    }
+}

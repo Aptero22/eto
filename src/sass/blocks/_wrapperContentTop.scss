@@ -1,3 +1,4 @@
+
 .wrapper__content_top {
     .title_content {
         margin-left: 0;
@@ -6,18 +7,24 @@
 
 .wrapper__content_top,
 .wrapper__content_middle,
-.wrapper__content_bottom {
+.wrapper__content_bottom,
+.wrapper__content_low {
     max-width: 955px;
     position: relative;
     margin: 0 auto;
     overflow: hidden;
 }
 
+.wrapper__content_low {
+    overflow: visible;
+}
+
 @media (max-width: 1001px) {
 
     .wrapper__content_top,
     .wrapper__content_middle,
-    .wrapper__content_bottom {
+    .wrapper__content_bottom,
+    .wrapper__content_low {
         max-width: 828px;
     }
     .wrapper__content_top {
@@ -34,7 +41,8 @@
 
     .wrapper__content_top,
     .wrapper__content_middle,
-    .wrapper__content_bottom {
+    .wrapper__content_bottom,
+    .wrapper__content_low {
         max-width: 649px;
     }
 }
@@ -43,7 +51,8 @@
 
     .wrapper__content_top,
     .wrapper__content_middle,
-    .wrapper__content_bottom {
+    .wrapper__content_bottom,
+    .wrapper__content_low {
         max-width: 431px;
     }
 }
@@ -52,7 +61,8 @@
 
     .wrapper__content_top,
     .wrapper__content_middle,
-    .wrapper__content_bottom {
+    .wrapper__content_bottom,
+    .wrapper__content_low {
         max-width: 291px;
     }
 }

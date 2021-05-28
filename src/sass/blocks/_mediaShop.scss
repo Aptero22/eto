@@ -1,0 +1,193 @@
+@media (max-width: 1001px) {
+    .shop {
+        padding: 12px 85px 124px;
+        &__wrapper-link,
+        &__wrapper,
+        &__card {
+            margin-left: 0;
+        }
+        &__wrapper-link {
+            justify-content: space-between;
+            margin-top: 60px;
+            a {
+                width: 195px;
+                height: 92px;
+                font-size: 16px;
+            }
+        }
+        &__descr {
+            margin-top: 0;
+        }
+        &__card_description {
+            padding-right: 38px;
+        }
+    }
+}
+
+@media (min-width: 770px) and (max-width: 859px) {
+    .shop {
+        &__card {
+            flex-direction: column;
+            align-items: center;
+            padding: 0 25px 25px 25px;
+        }
+        &__card_description {
+            padding-right: 0;
+            padding-top: 0;
+        }
+        &__card_img {
+            padding-right: 0;
+            padding-bottom: 25px;
+            
+        }
+        &__card_parameters {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .shop {
+        padding: 15px 60px 155px;
+        &__wrapper-link a {
+            width: 156px;
+            height: 74px;
+            font-size: 14px;
+            line-height: 16px;
+            padding-right: 26px;
+            padding-left: 26px;
+            margin-right: 8px;
+        }
+        &__descr {
+            font-size: 18px;
+            line-height: 30px;
+        }
+        &__card_img {
+            padding-right: 30px;
+            img {
+                height: 100%;
+                width: 272px;
+            }
+        }
+        &__card_parameters {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (min-width: 601px) and (max-width: 750px) {
+    .shop {
+        .shop {
+            &__card {
+                flex-direction: column;
+                align-items: center;
+                padding: 0 10px 25px 10px;
+            }
+            &__card_description {
+                padding-right: 0;
+                padding-top: 0;
+            }
+            &__card_img {
+                padding-right: 0;
+                padding-bottom: 25px;
+
+            }
+            &__card_parameters {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .shop {
+        padding: 10px 25px 100px;
+        &__card {
+            flex-direction: column;
+            max-height: none;
+        }
+        &__card_img {
+            padding-right: 0;
+            img {
+                width: 100%;
+            }
+        }
+        &__card_description {
+            padding: 25px 35px 35px 35px;
+        }
+        &__card_buttons {
+            justify-content: center;
+        }
+        &__wrapper-link {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+            a {
+                margin-top: 16px;
+                &:nth-child(even) {
+                    margin-right: 0;
+                }
+            }
+            
+        }
+    }
+}
+
+@media (min-width: 322px) and (max-width: 370px) {
+    .shop {
+        &__wrapper-link {
+            a {
+                width: 48%;
+            }
+        }
+    }
+}
+
+@media (min-width: 322px) and (max-width: 400px) {
+    .shop {
+        &__card_description {
+            padding: 25px 10px 35px 10px;
+        }
+        &__card-btn {
+            margin-right: 10px;
+        }
+        .card__button {
+            width: 120px;
+        }
+    }
+}
+
+@media (max-width: 321px) {
+    .shop {
+        padding: 4px 15px 50px;
+        &__card_description {
+            padding: 25px 10px;
+        }
+        &__card_parameters {
+            font-size: 10px;
+        }
+        &__card_main {
+            font-size: 11px;
+        }
+        &__card_subtitle {
+            font-size: 12px;
+        }
+        &__card-btn {
+            max-width: 127px;
+            margin-right: 10px;
+            a {
+                font-size: 16px;
+            }
+        }
+        &__wrapper-link a {
+            width: 141px;
+            font-size: 12px;
+        }
+        .card__button {
+            max-width: 127px;
+            font-size: 16px;
+        }
+
+    }
+    
+}

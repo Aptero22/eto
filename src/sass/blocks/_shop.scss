@@ -1,19 +1,25 @@
 .shop {
-    padding-top: 61px;
-    padding-bottom: 586px;
+    padding-top: 16px;
+    padding-bottom: 150px;
     &__hi-fi {
-        padding-bottom: 548px;
+        padding-bottom: 150px;
     }
     &__signaling {
-        padding-bottom: 956px;
+        padding-bottom: 150px;
     }
     &__patent {
-        padding-bottom: 219px;
+        padding-bottom: 150px;
+    }
+    &__descr_patent {
+        margin-top: 40px;
+    }
+    &__card_wrapper {
+        margin-top: 40px;
     }
     &__wrapper-link {
-        margin-left: 165px;
         display: flex;
         margin-bottom: 60px;
+        margin-top: 60px;
         a {
             width: 223px;
             height: 105px;
@@ -44,19 +50,25 @@
         display: flex;
         border: 2px solid #f4b407;
         max-width: 949px;
-        max-height: 396px;
-        margin-left: 165px;
         margin-bottom: 30px;
         &:last-child {
             margin-bottom: 0px;
         }
         &_img {
             padding-right: 40px;
+            img {
+                display: block;
+                height: 100%;
+                width: auto;
+                max-height: 396px;
+            }
+            
         }
         &_description {
+            width: 100%;
             padding-top: 25px;
             padding-right: 77px;
-            padding-bottom: 36px;
+            box-sizing: border-box;
         }
         &_subtitle {
             margin-top: 10px;
@@ -74,11 +86,20 @@
             text-align: left;
         }
         &_parameters {
+            width: 100%;
             color: #ffffff;
             font-size: 14px;
             font-weight: 400;
             line-height: 28px;
             text-align: left;
+            &_item {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                &-right {
+                    color: #f49807;
+                }
+            }
         }
         &_values {
             color: #f49807;
@@ -90,7 +111,6 @@
         &_specifications {
             display: flex;
             justify-content: space-between;
-            min-width: 507px;
             margin-top: 3px;
         }
         &_buttons {
@@ -152,7 +172,6 @@
             justify-content: flex-end;
         }
         &_product {
-            margin-top: 84px;
             padding: 35px 57px 57px 57px;
             box-sizing: border-box;
         }
@@ -179,7 +198,6 @@
         
     }
     &__wrapper {
-        margin-left: 165px;
         position: relative;
         &_wrapper {
             display: flex;
@@ -188,22 +206,13 @@
         }
     }
     &__wrapper-img {
-        position: absolute;
-        top: 31px;
-        left: -20px;
-    }
-    &__wrapper-product {
-        top: 25px;
-    }
-    &__wrapper-patent {
-        top: 50px;
+        margin-left: -15px;
     }
     &__autolight-img {
         top: 25px;
     }
     &__descr {
-        margin-top: 48px;
-        width: 933px;
+        max-width: 933px;
         color: #ffffff;
         font-size: 20px;
         font-weight: 400;
@@ -228,7 +237,6 @@
             }
         }
         &_patent {
-            margin-left: 165px;
             .blue {
                 margin-bottom: 10px;
             }
