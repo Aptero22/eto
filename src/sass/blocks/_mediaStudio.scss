@@ -9,6 +9,13 @@
             flex-direction: column-reverse;
             padding-top: 35px;
         }
+        &__audio__wrapper {
+            max-width: 300px;
+        }
+        &__wrapper_wrapper-left-text {
+            margin-top: 40px;
+            max-width: 335px;
+        }
     }
 }
 
@@ -34,11 +41,28 @@
     }
 }
 
+@media (min-width: 322px) and (max-width: 380px) {
+    .studio {
+        &__audio__wrapper {
+            padding: 0 5px 25px 5px;
+            &-item audio {
+                width: 100%;
+            }
+        }
+    }
+}
+
 @media (max-width: 321px) {
     .studio {
         padding: 4px 15px 50px;
         &__descr {
             font-size: 12px;
+        }
+        &__audio__wrapper {
+            padding: 0 5px 25px 5px;
+            &-item audio {
+                width: 100%;
+            }
         }
     }
 }

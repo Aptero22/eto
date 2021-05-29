@@ -2235,6 +2235,52 @@ label span {
   padding-bottom: 49px;
 }
 
+.studio__audio-img {
+  position: absolute;
+  top: -21px;
+  left: -5px;
+}
+
+.studio__audio__wrapper {
+  border: 2px solid #f4b407;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 25px 25px 25px;
+  position: relative;
+  overflow-x: clip;
+}
+
+.studio__audio__wrapper-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.studio__audio__wrapper-item p {
+  font-size: 16px;
+}
+
+.studio__audio__wrapper-item p span {
+  color: #f4b407;
+}
+
+.studio__wrapper_wrapper-rigty-text {
+  color: #0a6ab2;
+  margin-bottom: 20px;
+}
+
 .studio__wrapper-second {
   margin-left: 0;
 }
@@ -6879,6 +6925,13 @@ label span {
             flex-direction: column-reverse;
     padding-top: 35px;
   }
+  .studio__audio__wrapper {
+    max-width: 300px;
+  }
+  .studio__wrapper_wrapper-left-text {
+    margin-top: 40px;
+    max-width: 335px;
+  }
 }
 
 @media (max-width: 769px) {
@@ -6903,12 +6956,27 @@ label span {
   }
 }
 
+@media (min-width: 322px) and (max-width: 380px) {
+  .studio__audio__wrapper {
+    padding: 0 5px 25px 5px;
+  }
+  .studio__audio__wrapper-item audio {
+    width: 100%;
+  }
+}
+
 @media (max-width: 321px) {
   .studio {
     padding: 4px 15px 50px;
   }
   .studio__descr {
     font-size: 12px;
+  }
+  .studio__audio__wrapper {
+    padding: 0 5px 25px 5px;
+  }
+  .studio__audio__wrapper-item audio {
+    width: 100%;
   }
 }
 
