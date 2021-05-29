@@ -1,5 +1,8 @@
+.title_content-studio {
+    margin-top: 40px;
+}
 .studio {
-    padding-top: 62px;
+    padding-top: 16px;
     padding-bottom: 338px;
     &__wrapper {
         margin-left: 165px;
@@ -9,6 +12,9 @@
             padding-top: 40px;
             padding-bottom: 49px;
         }
+    }
+    &__wrapper-second {
+        margin-left: 0;
     }
     &__img {
         position: absolute;
@@ -22,7 +28,7 @@
     }
     &__descr {
         margin-top: 48px;
-        width: 933px;
+        width: auto;
         color: #ffffff;
         font-size: 20px;
         font-weight: 400;

@@ -1,6 +1,6 @@
 .acoustics {
-    padding-top: 62px;
-    padding-bottom: 625px;
+    padding-top: 16px;
+    padding-bottom: 150px;
     &__services {
         padding-top: 115px;
         padding-bottom: 417px;
@@ -8,10 +8,6 @@
     &__installations {
         padding-top: 121px;
         padding-bottom: 80px;
-    }
-    &__wrapper {
-        margin-left: 165px;
-        position: relative;
     }
     &__img {
         position: absolute;
@@ -25,7 +21,7 @@
     }
     &__descr {
         margin-top: 48px;
-        width: 933px;
+        width: auto;
         color: #ffffff;
         font-size: 20px;
         font-weight: 400;
@@ -70,7 +66,7 @@
     &__workshop {
         padding: 19px 38px 22px 38px;
         border: 2px solid #f4b407;
-        width: 909px;
+        width: auto;
         position: relative;
         margin-top: 38px;
         &-img {
