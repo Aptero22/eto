@@ -340,7 +340,7 @@ p {
 
 .about__services {
   padding-top: 62px;
-  padding-bottom: 417px;
+  padding-bottom: 150px;
 }
 
 .about__installations {
@@ -351,6 +351,10 @@ p {
 .about__wrapper {
   margin-left: 165px;
   position: relative;
+}
+
+.about__wrapper-second {
+  margin-left: 0;
 }
 
 .about__img {
@@ -6671,5 +6675,188 @@ label span {
   .shop__card_patent {
     font-size: 12px;
     line-height: 24px;
+  }
+}
+
+@media (max-width: 1001px) {
+  .shop__autolight_text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .shop__autolight_subtitle {
+    font-size: 20px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .shop__autolight_text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .shop__autolight_subtitle {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 321px) {
+  .shop__autolight_text {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .shop__autolight_subtitle {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 1001px) {
+  .about__wrapper-second {
+    margin-left: 0;
+  }
+  .about__descr-second {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 0;
+  }
+  .about__descr-second p {
+    padding-right: 0;
+  }
+  .about__workshop {
+    width: auto;
+    padding: 15px 15px 20px 15px;
+  }
+  .about__workshop-left img {
+    height: 100%;
+    max-width: 484px;
+  }
+  .about__workshop-right img {
+    height: 100%;
+    max-width: 285px;
+  }
+  .about__workshop-img {
+    top: auto;
+    bottom: -24px;
+  }
+  .about__services {
+    padding: 12px 85px 124px;
+  }
+}
+
+@media (min-width: 770px) and (max-width: 990px) {
+  .about__workshop_wrapper-second {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about__workshop-right img {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 769px) {
+  .about__services {
+    padding: 15px 60px 155px;
+  }
+  .about__descr-second {
+    margin-top: 20px;
+  }
+  .about__descr-second p {
+    padding-right: 0;
+  }
+  .about__workshop {
+    padding: 13px 13px 10px 13px;
+  }
+  .about__workshop-left img {
+    max-width: 380px;
+    max-height: 285px;
+  }
+  .about__workshop-right img {
+    max-width: 224px;
+    max-height: 285px;
+  }
+  .about__workshop-subtitle {
+    margin-top: 5px;
+  }
+  .about__workshop-subtitle .title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 760px) {
+  .about__workshop-left img {
+    max-width: 350px;
+    max-height: 280px;
+  }
+  .about__workshop-right img {
+    max-width: 190px;
+    max-height: 280px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 700px) {
+  .about__workshop_wrapper-second {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about__workshop-right img {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about__services {
+    padding: 10px 25px 100px;
+  }
+  .about__workshop_wrapper-second {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about__workshop-right img {
+    margin-top: 15px;
+  }
+  .about__descr-second {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 322px) and (max-width: 450px) {
+  .about__workshop-left img {
+    max-width: 260px;
+    max-height: 195px;
+  }
+}
+
+@media (max-width: 321px) {
+  .about__workshop-left img {
+    max-width: 260px;
+    max-height: 195px;
+  }
+  .about__workshop-right img {
+    max-width: 224px;
+    max-height: 285px;
+  }
+  .about__descr-second {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .about__services {
+    padding: 4px 15px 50px;
   }
 }

@@ -9,7 +9,7 @@
     }
     &__services {
         padding-top: 62px;
-        padding-bottom: 417px;
+        padding-bottom: 150px;
     }
     &__installations {
         padding-top: 16px;
@@ -18,6 +18,9 @@
     &__wrapper {
         margin-left: 165px;
         position: relative;
+    }
+    &__wrapper-second {
+        margin-left: 0;
     }
     &__img {
         position: absolute;

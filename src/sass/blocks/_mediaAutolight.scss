@@ -1,0 +1,39 @@
+@media (max-width: 1001px) {
+    .shop {
+        &__autolight_text {
+            font-size: 18px;
+            line-height: 30px;
+        }
+        &__autolight_subtitle {
+            font-size: 20px;
+            line-height: 36px;
+        }
+        
+    }
+}
+
+@media (max-width: 600px) {
+    .shop {
+        &__autolight_text {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__autolight_subtitle {
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+}
+
+@media (max-width: 321px) {
+    .shop {
+        &__autolight_text {
+            font-size: 12px;
+            line-height: 24px;
+        }
+        &__autolight_subtitle {
+            font-size: 16px;
+            line-height: 30px;
+        }
+    }
+}
