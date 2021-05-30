@@ -1,8 +1,17 @@
+
+
 @media (min-width: 1000px) and (max-width: 1650px) {
     .carousel {
         &__two {
             margin-left: 200px;
         }
+    }
+}
+
+@media (min-width: 1581px) and (max-width: 1635px) {
+    .container {
+        max-width: 1280px;
+        margin: 0 auto;
     }
 }
 
