@@ -32,6 +32,10 @@ p {
   height: auto;
 }
 
+.wrapper__content_top_breadcrumb {
+  padding-bottom: 0 !important;
+}
+
 .header {
   max-height: 123px;
   padding: 21px 0;
@@ -235,6 +239,10 @@ p {
   z-index: 100;
 }
 
+.home__wrapper_submenu {
+  position: relative;
+}
+
 .home__abs-right {
   position: absolute;
   top: 134px;
@@ -268,16 +276,16 @@ p {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 .home__submenu li a:hover, .home__submenu li a:focus {
   color: #ffffff;
+  text-decoration: none;
 }
 
 .home__text {
   margin-top: 243px;
-  text-shadow: 0 5px 7px rgba(17, 62, 77, 0.75);
+  text-shadow: black 3px 3px 0, black -3px -3px 0, black -3px 3px 0, black 3px -3px 0;
   color: #ffffff;
   font-size: 67px;
   font-weight: 500;
@@ -291,7 +299,7 @@ p {
 
 .home__quality {
   margin-left: 139px;
-  text-shadow: 0 5px 7px rgba(17, 62, 77, 0.75);
+  text-shadow: black 3px 3px 0, black -3px -3px 0, black -3px 3px 0, black 3px -3px 0;
   color: #ffffff;
   font-size: 105px;
   font-weight: 700;
@@ -339,7 +347,7 @@ p {
 }
 
 .about__services {
-  padding-top: 62px;
+  padding-top: 0;
   padding-bottom: 150px;
 }
 
@@ -3282,6 +3290,11 @@ label span {
 
 .menu__close:hover, .menu__close:focus {
   color: #011a26;
+}
+
+.sub_menu {
+  position: relative;
+  overflow-x: clip;
 }
 
 @media (min-width: 1000px) and (max-width: 1650px) {

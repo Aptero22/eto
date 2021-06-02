@@ -28,6 +28,11 @@ p {
     height: auto;
 }
 
+.wrapper__content_top_breadcrumb {
+    // margin-top: 16px !important;
+    padding-bottom: 0 !important;
+}
+
 
 
 
@@ -50,6 +55,7 @@ p {
 @import 'blocks/breadcrumb';
 @import 'blocks/slider2';
 @import 'blocks/menu';
+@import 'blocks/sub_menu';
 @import 'blocks/media';
 @import 'blocks/mediaAbout';
 @import 'blocks/mediaInstallations';
