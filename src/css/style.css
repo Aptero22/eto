@@ -4441,16 +4441,16 @@ label span {
   .home__submenu li a {
     font-size: 10px;
   }
-  .home__quality {
+  .home__quality.home__quality_second {
     font-size: 59px;
-    margin-left: 121px;
+    margin-left: 100px;
   }
-  .home__text {
+  .home__text.home__text_second {
     margin-left: 72px;
     font-size: 38px;
     line-height: 31px;
   }
-  .home__text span {
+  .home__text.home__text_second span {
     font-size: 25px;
   }
   .carousel__two {
@@ -5100,17 +5100,18 @@ label span {
   .carousel .logo_5 {
     min-width: 95px;
   }
-  .home__text {
+  .home__text.home__text_second {
     margin-left: 0;
     padding-left: 7px;
     font-size: 29px;
     text-align: left;
     line-height: 23px;
+    text-shadow: black 2px 2px 0, black -2px -2px 0, black -2px 2px 0, black 2px -2px 0;
   }
-  .home__text span {
+  .home__text.home__text_second span {
     font-size: 19px;
   }
-  .home__quality {
+  .home__quality.home__quality_second {
     margin-left: 0;
     font-size: 45px;
     text-align: center;
