@@ -3327,7 +3327,7 @@ label span {
     background: #011a26;
   }
   .header {
-    overflow: hidden;
+    overflow-x: clip;
   }
   .header__abs-left {
     left: -86px;
@@ -3367,9 +3367,6 @@ label span {
   }
   .header__phone {
     padding-right: 53px;
-  }
-  .home {
-    overflow: hidden;
   }
   .home__submenu {
     padding: 0;
@@ -3780,7 +3777,6 @@ label span {
     max-width: 100%;
   }
   .header {
-    overflow: hidden;
     padding: 37px 0 19px 0;
   }
   .header__logo {
@@ -4348,7 +4344,6 @@ label span {
     max-width: 100%;
   }
   .header {
-    overflow: hidden;
     padding: 26px 0 13px 0;
   }
   .header nav {
@@ -5542,9 +5537,6 @@ label span {
 }
 
 @media (max-width: 769px) {
-  .header {
-    overflow: hidden;
-  }
   .header__low {
     -webkit-box-align: end;
         -ms-flex-align: end;
@@ -5711,7 +5703,6 @@ label span {
 
 @media (max-width: 600px) {
   .header {
-    overflow: hidden;
     padding: 26px 0 13px 0;
   }
   .header nav {

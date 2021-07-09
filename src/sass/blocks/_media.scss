@@ -36,7 +36,8 @@
         background: #011a26;
     }
     .header {
-        overflow: hidden;
+        // overflow: hidden;
+        overflow-x: clip;
         &__abs-left {
             left: -86px;
         }
@@ -74,7 +75,7 @@
         }
     }
     .home {
-        overflow: hidden;
+        // overflow: hidden;
         &__submenu {
             padding: 0;
             li {
@@ -498,7 +499,7 @@
         max-width: 100%;
     }
     .header {
-        overflow: hidden;
+        // overflow: hidden;
         padding: 37px 0 19px 0;
         &__logo {
             padding-left: 69px;
@@ -1090,7 +1091,7 @@
         max-width: 100%;
     }
     .header {
-        overflow: hidden;
+        // overflow: hidden;
         padding: 26px 0 13px 0;
         nav {
             align-self: center;

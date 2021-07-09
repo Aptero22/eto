@@ -124,7 +124,7 @@
 
 @media (max-width: 769px) {
     .header {
-        overflow: hidden;
+        // overflow: hidden;
         &__low {
             align-items: flex-end;
             margin-top: 5px;
@@ -305,7 +305,7 @@
 
 @media (max-width: 600px) {
     .header {
-        overflow: hidden;
+        // overflow: hidden;
         padding: 26px 0 13px 0;
         nav {
             align-self: center;
